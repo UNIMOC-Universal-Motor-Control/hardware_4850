@@ -847,4 +847,42 @@ Wire Wire Line
 Wire Wire Line
 	3250 2750 3250 2950
 NoConn ~ 4000 2850
+$Comp
+L Device:C C?
+U 1 1 5DCE12CA
+P 2700 2350
+AR Path="/5D149BF5/5DCE12CA" Ref="C?"  Part="1" 
+AR Path="/5DCE12CA" Ref="C?"  Part="1" 
+AR Path="/5D1F70AC/5DCE12CA" Ref="C?"  Part="1" 
+AR Path="/5DB60D99/5DCE12CA" Ref="C?"  Part="1" 
+F 0 "C?" V 2650 2400 50  0000 L CNN
+F 1 "100n" V 2750 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2738 2200 50  0001 C CNN
+F 3 "~" H 2700 2350 50  0001 C CNN
+F 4 "CL10B104KBNC" V 2850 2350 50  0000 C CNN "Part#"
+	1    2700 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1950 2700 1950
+Wire Wire Line
+	2700 1950 2700 2200
+Wire Wire Line
+	2700 2500 2700 2600
+$Comp
+L power:GNDA #PWR?
+U 1 1 5DCEDF2E
+P 2700 2600
+AR Path="/5DCEDF2E" Ref="#PWR?"  Part="1" 
+AR Path="/5C732F77/5DCEDF2E" Ref="#PWR?"  Part="1" 
+AR Path="/5D149BF5/5DCEDF2E" Ref="#PWR?"  Part="1" 
+AR Path="/5D1F70AC/5DCEDF2E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60D99/5DCEDF2E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2700 2350 50  0001 C CNN
+F 1 "GNDA" H 2705 2427 50  0000 C CNN
+F 2 "" H 2700 2600 50  0001 C CNN
+F 3 "" H 2700 2600 50  0001 C CNN
+	1    2700 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
