@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:hardware_4850-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -168,19 +169,6 @@ F 3 "" H 10500 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3VA #PWR?
-U 1 1 5DB60CA1
-P 7700 4900
-AR Path="/5DB33F8E/5DB60CA1" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60CA1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7700 4750 50  0001 C CNN
-F 1 "+3.3VA" H 7715 5073 50  0000 C CNN
-F 2 "" H 7700 4900 50  0001 C CNN
-F 3 "" H 7700 4900 50  0001 C CNN
-	1    7700 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDPWR #PWR?
 U 1 1 5DB60CA7
 P 8000 3600
@@ -221,19 +209,6 @@ Wire Wire Line
 	6700 3900 9150 3900
 Wire Wire Line
 	6850 3800 9150 3800
-$Comp
-L power:GND #PWR?
-U 1 1 5DB60CBB
-P 7700 6300
-AR Path="/5DB33F8E/5DB60CBB" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60CBB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7700 6050 50  0001 C CNN
-F 1 "GND" H 7705 6127 50  0000 C CNN
-F 2 "" H 7700 6300 50  0001 C CNN
-F 3 "" H 7700 6300 50  0001 C CNN
-	1    7700 6300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7250 1200 7100 1200
 Wire Wire Line
@@ -242,21 +217,6 @@ Wire Wire Line
 	7750 1200 8000 1200
 Wire Wire Line
 	8000 1200 8000 2050
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
-U 1 1 5DB60CC7
-P 8100 5450
-AR Path="/5DB33F8E/5DB60CC7" Ref="J?"  Part="1" 
-AR Path="/5DB60CC7" Ref="J?"  Part="1" 
-F 0 "J?" H 8150 5867 50  0000 C CNN
-F 1 "ADC" H 8150 5776 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 8100 5450 50  0001 C CNN
-F 3 "~" H 8100 5450 50  0001 C CNN
-	1    8100 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 5250 7700 5250
 Wire Wire Line
 	8700 1550 9150 1550
 Wire Wire Line
@@ -284,17 +244,7 @@ Wire Wire Line
 Text Notes 10550 6350 1    50   ~ 0
 Place near the FETs
 Wire Wire Line
-	7700 4900 7700 4950
-Wire Wire Line
-	7700 4950 8100 4950
-Wire Wire Line
 	10250 5000 10250 5050
-Connection ~ 7700 4950
-Wire Wire Line
-	7700 4950 7700 5250
-Connection ~ 7700 6200
-Wire Wire Line
-	7700 6200 7700 6300
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 5DB60CE1
@@ -460,23 +410,6 @@ Wire Wire Line
 Connection ~ 10550 4250
 $Comp
 L power:PWR_FLAG #FLG?
-U 1 1 5DB60D31
-P 7250 6100
-AR Path="/5DB33F8E/5DB60D31" Ref="#FLG?"  Part="1" 
-AR Path="/5DB60D31" Ref="#FLG?"  Part="1" 
-F 0 "#FLG?" H 7250 6175 50  0001 C CNN
-F 1 "PWR_FLAG" H 7250 6273 50  0000 C CNN
-F 2 "" H 7250 6100 50  0001 C CNN
-F 3 "~" H 7250 6100 50  0001 C CNN
-	1    7250 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 6100 7250 6200
-Wire Wire Line
-	7250 6200 7700 6200
-$Comp
-L power:PWR_FLAG #FLG?
 U 1 1 5DB60D39
 P 8100 4850
 AR Path="/5DB33F8E/5DB60D39" Ref="#FLG?"  Part="1" 
@@ -490,19 +423,6 @@ F 3 "~" H 8100 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 4850 8100 4950
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5DB60D40
-P 6500 900
-AR Path="/5DB33F8E/5DB60D40" Ref="#FLG?"  Part="1" 
-AR Path="/5DB60D40" Ref="#FLG?"  Part="1" 
-F 0 "#FLG?" H 6500 975 50  0001 C CNN
-F 1 "PWR_FLAG" H 6500 1073 50  0000 C CNN
-F 2 "" H 6500 900 50  0001 C CNN
-F 3 "~" H 6500 900 50  0001 C CNN
-	1    6500 900 
-	1    0    0    -1  
-$EndComp
 $Comp
 L Mechanical:MountingHole_Pad H?
 U 1 1 5DB60D49
@@ -672,44 +592,15 @@ F11 "Temp-" I R 3050 3300 50
 F12 "Temp+" I R 3050 3200 50 
 $EndSheet
 Wire Wire Line
-	8400 5650 9450 5650
-Wire Wire Line
 	9150 4050 8500 4050
 Wire Wire Line
 	8500 4050 8500 5250
 Wire Wire Line
 	8700 1550 8700 5450
 Wire Wire Line
-	7900 5350 7700 5350
-Wire Wire Line
-	7700 5350 7700 5450
-Wire Wire Line
-	7900 5450 7700 5450
-Connection ~ 7700 5450
-Wire Wire Line
-	7700 5450 7700 5550
-Wire Wire Line
-	7900 5550 7700 5550
-Connection ~ 7700 5550
-Wire Wire Line
-	7700 5550 7700 5650
-Wire Wire Line
-	7900 5650 7700 5650
-Connection ~ 7700 5650
-Wire Wire Line
-	7700 5650 7700 6200
-Wire Wire Line
-	8400 5250 8500 5250
-Wire Wire Line
-	8400 5350 8600 5350
-Wire Wire Line
-	8400 5450 8700 5450
-Wire Wire Line
 	9450 5650 9450 6200
 Wire Wire Line
 	9450 6200 10250 6200
-Wire Wire Line
-	8400 5550 10250 5550
 Wire Wire Line
 	10250 5550 10250 5800
 Wire Wire Line
@@ -750,19 +641,6 @@ Wire Wire Line
 Wire Wire Line
 	3400 1500 3400 1000
 $Comp
-L power:+12P #PWR?
-U 1 1 5DB60C8F
-P 6800 900
-AR Path="/5DB33F8E/5DB60C8F" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60C8F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6800 750 50  0001 C CNN
-F 1 "+12P" H 6815 1073 50  0000 C CNN
-F 2 "" H 6800 900 50  0001 C CNN
-F 3 "" H 6800 900 50  0001 C CNN
-	1    6800 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+BATT #PWR?
 U 1 1 5DD137A0
 P 7100 900
@@ -775,99 +653,138 @@ F 3 "" H 7100 900 50  0001 C CNN
 	1    7100 900 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 1400 6800 1400
-Wire Wire Line
-	6500 900  6500 1400
-Wire Wire Line
-	6800 900  6800 1400
-Connection ~ 6800 1400
-Wire Wire Line
-	6800 1400 6500 1400
 NoConn ~ 4250 1400
 NoConn ~ 7250 1300
+Wire Wire Line
+	6900 5650 6900 6200
+Connection ~ 6900 5650
+Wire Wire Line
+	6900 5550 6900 5650
+Connection ~ 6900 5550
+Wire Wire Line
+	6900 5450 6900 5550
+Connection ~ 6900 5450
+Wire Wire Line
+	6900 5350 6900 5450
+Wire Wire Line
+	6450 6200 6900 6200
+Wire Wire Line
+	6450 6100 6450 6200
 $Comp
-L Device:R R?
-U 1 1 5DD37325
-P 6150 10550
-AR Path="/5D149BF5/5DD37325" Ref="R?"  Part="1" 
-AR Path="/5DD37325" Ref="R?"  Part="1" 
-AR Path="/5D1F70AC/5DD37325" Ref="R?"  Part="1" 
-AR Path="/5D1F70AC/5D89067B/5DD37325" Ref="R?"  Part="1" 
-AR Path="/5DB60D99/5D89067B/5DD37325" Ref="R?"  Part="1" 
-F 0 "R?" V 6150 10450 50  0000 L CNN
-F 1 "560R 0.1%" V 6250 10450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6080 10550 50  0001 C CNN
-F 3 "~" H 6150 10550 50  0001 C CNN
-F 4 "AR03BTDX5600" V 6350 10550 50  0000 C CNN "Part#"
-	1    6150 10550
+L power:PWR_FLAG #FLG?
+U 1 1 5DB60D31
+P 6450 6100
+AR Path="/5DB33F8E/5DB60D31" Ref="#FLG?"  Part="1" 
+AR Path="/5DB60D31" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 6450 6175 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 6273 50  0000 C CNN
+F 2 "" H 6450 6100 50  0001 C CNN
+F 3 "~" H 6450 6100 50  0001 C CNN
+	1    6450 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 9800 6150 10050
+	6900 6200 6900 6300
+Connection ~ 6900 6200
 Wire Wire Line
-	6150 11100 6150 11000
-Connection ~ 6150 10050
+	6900 4950 6900 5250
+Connection ~ 6900 4950
 Wire Wire Line
-	6150 10050 6150 10400
+	6900 4950 8100 4950
 Wire Wire Line
-	6150 9450 6150 9500
+	6900 4900 6900 4950
 $Comp
-L power:+48V #PWR?
-U 1 1 5DD37330
-P 6150 9450
-AR Path="/5DD37330" Ref="#PWR?"  Part="1" 
-AR Path="/5D1F70AC/5DD37330" Ref="#PWR?"  Part="1" 
-AR Path="/5D1F70AC/5D89067B/5DD37330" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60D99/5D89067B/5DD37330" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6150 9300 50  0001 C CNN
-F 1 "+48V" H 6165 9623 50  0000 C CNN
-F 2 "" H 6150 9450 50  0001 C CNN
-F 3 "" H 6150 9450 50  0001 C CNN
-	1    6150 9450
+L power:GND #PWR?
+U 1 1 5DB60CBB
+P 6900 6300
+AR Path="/5DB33F8E/5DB60CBB" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60CBB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6900 6050 50  0001 C CNN
+F 1 "GND" H 6905 6127 50  0000 C CNN
+F 2 "" H 6900 6300 50  0001 C CNN
+F 3 "" H 6900 6300 50  0001 C CNN
+	1    6900 6300
 	1    0    0    -1  
 $EndComp
-Text Notes 6050 6450 0    50   ~ 0
-DC bus voltage measurement
 $Comp
-L power:GNDA #PWR?
-U 1 1 5DD37337
-P 6150 11100
-AR Path="/5D1F70AC/5DD37337" Ref="#PWR?"  Part="1" 
-AR Path="/5D1F70AC/5D89067B/5DD37337" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60D99/5D89067B/5DD37337" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6150 10850 50  0001 C CNN
-F 1 "GNDA" H 6155 10927 50  0000 C CNN
-F 2 "" H 6150 11100 50  0001 C CNN
-F 3 "" H 6150 11100 50  0001 C CNN
-	1    6150 11100
+L power:+3.3VA #PWR?
+U 1 1 5DB60CA1
+P 6900 4900
+AR Path="/5DB33F8E/5DB60CA1" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60CA1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6900 4750 50  0001 C CNN
+F 1 "+3.3VA" H 6915 5073 50  0000 C CNN
+F 2 "" H 6900 4900 50  0001 C CNN
+F 3 "" H 6900 4900 50  0001 C CNN
+	1    6900 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 10050 6900 10050
+	7250 5650 6900 5650
 Wire Wire Line
-	6150 11000 6900 11000
-Connection ~ 6150 11000
+	7750 5550 10250 5550
 Wire Wire Line
-	6150 11000 6150 10700
+	7250 5550 6900 5550
+Wire Wire Line
+	7750 5450 8700 5450
+Wire Wire Line
+	7250 5450 6900 5450
+Wire Wire Line
+	7750 5350 8600 5350
+Wire Wire Line
+	7250 5350 6900 5350
+Wire Wire Line
+	7750 5250 8500 5250
+Wire Wire Line
+	7750 5650 9450 5650
+Wire Wire Line
+	7250 5250 6900 5250
 $Comp
-L Device:R R?
-U 1 1 5DD37342
-P 6150 9650
-AR Path="/5D149BF5/5DD37342" Ref="R?"  Part="1" 
-AR Path="/5DD37342" Ref="R?"  Part="1" 
-AR Path="/5D1F70AC/5DD37342" Ref="R?"  Part="1" 
-AR Path="/5D1F70AC/5D89067B/5DD37342" Ref="R?"  Part="1" 
-AR Path="/5D1F70AC/5D89067B/5D9C5C07/5DD37342" Ref="R?"  Part="1" 
-AR Path="/5D1F70AC/5D89067B/5D9E9385/5DD37342" Ref="R?"  Part="1" 
-AR Path="/5D1F70AC/5D89067B/5D9EAA63/5DD37342" Ref="R?"  Part="1" 
-AR Path="/5DB60D99/5D89067B/5DD37342" Ref="R?"  Part="1" 
-F 0 "R?" V 6150 9600 50  0000 L CNN
-F 1 "10k 0.1%" V 6250 9500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6080 9650 50  0001 C CNN
-F 3 "~" H 6150 9650 50  0001 C CNN
-F 4 "ARG03BTC1002" V 6350 9650 50  0000 C CNN "Part#"
-	1    6150 9650
-	-1   0    0    1   
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5DB60CC7
+P 7450 5450
+AR Path="/5DB33F8E/5DB60CC7" Ref="J?"  Part="1" 
+AR Path="/5DB60CC7" Ref="J?"  Part="1" 
+F 0 "J?" H 7500 5867 50  0000 C CNN
+F 1 "ADC" H 7500 5776 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 7450 5450 50  0001 C CNN
+F 3 "~" H 7450 5450 50  0001 C CNN
+	1    7450 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1400 6100 1400
+Connection ~ 6400 1400
+Wire Wire Line
+	6400 900  6400 1400
+Wire Wire Line
+	6100 900  6100 1400
+Wire Wire Line
+	7250 1400 6400 1400
+$Comp
+L power:+12P #PWR?
+U 1 1 5DB60C8F
+P 6400 900
+AR Path="/5DB33F8E/5DB60C8F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60C8F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 750 50  0001 C CNN
+F 1 "+12P" H 6415 1073 50  0000 C CNN
+F 2 "" H 6400 900 50  0001 C CNN
+F 3 "" H 6400 900 50  0001 C CNN
+	1    6400 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DB60D40
+P 6100 900
+AR Path="/5DB33F8E/5DB60D40" Ref="#FLG?"  Part="1" 
+AR Path="/5DB60D40" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 6100 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 1073 50  0000 C CNN
+F 2 "" H 6100 900 50  0001 C CNN
+F 3 "~" H 6100 900 50  0001 C CNN
+	1    6100 900 
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

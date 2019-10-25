@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:hardware_4850-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -547,4 +548,92 @@ Wire Notes Line
 	550  2150 6950 2150
 Wire Notes Line
 	6950 550  6950 6500
+Wire Notes Line
+	6950 4200 500  4200
+$Comp
+L Device:R R?
+U 1 1 5D8C2AE3
+P 1200 4800
+AR Path="/5D149BF5/5D8C2AE3" Ref="R?"  Part="1" 
+AR Path="/5D8C2AE3" Ref="R?"  Part="1" 
+AR Path="/5D1F70AC/5D8C2AE3" Ref="R?"  Part="1" 
+AR Path="/5D1F70AC/5D89067B/5D8C2AE3" Ref="R?"  Part="1" 
+AR Path="/5D1F70AC/5D89067B/5D9C5C07/5D8C2AE3" Ref="R?"  Part="1" 
+AR Path="/5D1F70AC/5D89067B/5D9E9385/5D8C2AE3" Ref="R?"  Part="1" 
+AR Path="/5D1F70AC/5D89067B/5D9EAA63/5D8C2AE3" Ref="R?"  Part="1" 
+AR Path="/5DB60D99/5D89067B/5D8C2AE3" Ref="R?"  Part="1" 
+F 0 "R?" V 1200 4750 50  0000 L CNN
+F 1 "10k 0.1%" V 1300 4650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1130 4800 50  0001 C CNN
+F 3 "~" H 1200 4800 50  0001 C CNN
+F 4 "ARG03BTC1002" V 1400 4800 50  0000 C CNN "Part#"
+	1    1200 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 6150 1200 5850
+Connection ~ 1950 6150
+Wire Wire Line
+	1200 6150 1950 6150
+Connection ~ 1950 5200
+Wire Wire Line
+	1200 5200 1950 5200
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D8ABE6D
+P 1200 6250
+AR Path="/5D1F70AC/5D8ABE6D" Ref="#PWR?"  Part="1" 
+AR Path="/5D1F70AC/5D89067B/5D8ABE6D" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60D99/5D89067B/5D8ABE6D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1200 6000 50  0001 C CNN
+F 1 "GNDA" H 1205 6077 50  0000 C CNN
+F 2 "" H 1200 6250 50  0001 C CNN
+F 3 "" H 1200 6250 50  0001 C CNN
+	1    1200 6250
+	1    0    0    -1  
+$EndComp
+Text Notes 950  4300 0    50   ~ 0
+DC bus voltage measurement
+$Comp
+L power:+48V #PWR?
+U 1 1 5D8ABE65
+P 1200 4600
+AR Path="/5D8ABE65" Ref="#PWR?"  Part="1" 
+AR Path="/5D1F70AC/5D8ABE65" Ref="#PWR?"  Part="1" 
+AR Path="/5D1F70AC/5D89067B/5D8ABE65" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60D99/5D89067B/5D8ABE65" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1200 4450 50  0001 C CNN
+F 1 "+48V" H 1215 4773 50  0000 C CNN
+F 2 "" H 1200 4600 50  0001 C CNN
+F 3 "" H 1200 4600 50  0001 C CNN
+	1    1200 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4600 1200 4650
+Wire Wire Line
+	1200 5200 1200 5550
+Connection ~ 1200 6150
+Wire Wire Line
+	1200 6250 1200 6150
+Connection ~ 1200 5200
+Wire Wire Line
+	1200 4950 1200 5200
+$Comp
+L Device:R R?
+U 1 1 5D8ABE5A
+P 1200 5700
+AR Path="/5D149BF5/5D8ABE5A" Ref="R?"  Part="1" 
+AR Path="/5D8ABE5A" Ref="R?"  Part="1" 
+AR Path="/5D1F70AC/5D8ABE5A" Ref="R?"  Part="1" 
+AR Path="/5D1F70AC/5D89067B/5D8ABE5A" Ref="R?"  Part="1" 
+AR Path="/5DB60D99/5D89067B/5D8ABE5A" Ref="R?"  Part="1" 
+F 0 "R?" V 1200 5600 50  0000 L CNN
+F 1 "560R 0.1%" V 1300 5600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1130 5700 50  0001 C CNN
+F 3 "~" H 1200 5700 50  0001 C CNN
+F 4 "AR03BTDX5600" V 1400 5700 50  0000 C CNN "Part#"
+	1    1200 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
