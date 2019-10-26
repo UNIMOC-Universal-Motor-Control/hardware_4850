@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 3 8
 Title "Phase"
 Date "2019-06-27"
 Rev "1"
@@ -813,6 +813,8 @@ $Comp
 L Driver_FET:LM5109BMA U?
 U 1 1 5DB3E3DA
 P 2950 2350
+AR Path="/5DB60C4A/5DB3E3DA" Ref="U?"  Part="1" 
+AR Path="/5DB60C50/5DB3E3DA" Ref="U?"  Part="1" 
 F 0 "U?" H 2950 3007 50  0000 C CNN
 F 1 "LM5109BMA" H 2950 2916 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2950 1850 50  0001 C CIN

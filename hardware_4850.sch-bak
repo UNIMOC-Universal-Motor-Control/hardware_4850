@@ -17,7 +17,7 @@ $EndDescr
 $Sheet
 S 9150 1200 950  1050
 U 5DB60C4A
-F0 "sheet5DB60C40" 50
+F0 "phase_a" 50
 F1 "phase.sch" 50
 F2 "Phase" O R 10100 1300 50 
 F3 "PwmH" I L 9150 1300 50 
@@ -27,7 +27,7 @@ $EndSheet
 $Sheet
 S 9150 2450 950  1050
 U 5DB60C50
-F0 "sheet5DB60C41" 50
+F0 "phase_b" 50
 F1 "phase.sch" 50
 F2 "Phase" O R 10100 2550 50 
 F3 "PwmH" I L 9150 2550 50 
@@ -37,7 +37,7 @@ $EndSheet
 $Sheet
 S 9150 3700 950  1050
 U 5DB60C56
-F0 "sheet5DB60C42" 50
+F0 "phase_c" 50
 F1 "phase.sch" 50
 F2 "Phase" O R 10100 3800 50 
 F3 "PwmH" I L 9150 3800 50 
@@ -139,7 +139,7 @@ Wire Wire Line
 $Sheet
 S 950  5700 2100 1300
 U 5DB60C83
-F0 "sheet5DB60C43" 50
+F0 "power_supply" 50
 F1 "power_supply.sch" 50
 $EndSheet
 $Comp
@@ -577,7 +577,7 @@ $EndComp
 $Sheet
 S 950  1200 2100 4150
 U 5DB60D99
-F0 "sheet5DB60C44" 50
+F0 "controller" 50
 F1 "controller.sch" 50
 F2 "Ia" I R 3050 3100 50 
 F3 "Ib" I R 3050 3000 50 
