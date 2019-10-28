@@ -542,15 +542,15 @@ CAN_TX
 Text Label 5500 3950 0    50   ~ 0
 CAN_RX
 Wire Wire Line
-	5300 2450 5950 2450
+	5300 2450 5850 2450
 Wire Wire Line
-	5300 4650 5950 4650
+	5300 4650 5650 4650
 Wire Wire Line
-	5950 2350 5300 2350
+	6700 2350 6150 2350
 Wire Wire Line
-	5300 4550 5950 4550
+	5300 4550 5650 4550
 Wire Wire Line
-	5300 2250 5950 2250
+	5300 2250 5850 2250
 Text Label 5500 3450 0    50   ~ 0
 TDO-SWO
 Wire Wire Line
@@ -565,17 +565,17 @@ Wire Wire Line
 	5300 2850 5950 2850
 Text Label 5500 2850 0    50   ~ 0
 TCK-SWCLK
-Text HLabel 5950 4550 2    50   Output ~ 0
+Text HLabel 6500 4550 2    50   Output ~ 0
 PwmBL
-Text HLabel 5950 2350 2    50   Output ~ 0
+Text HLabel 6700 2350 2    50   Output ~ 0
 PwmBH
-Text HLabel 5950 4450 2    50   Output ~ 0
+Text HLabel 6500 4450 2    50   Output ~ 0
 PwmAL
-Text HLabel 5950 2250 2    50   Output ~ 0
+Text HLabel 6700 2250 2    50   Output ~ 0
 PwmAH
-Text HLabel 5950 4650 2    50   Output ~ 0
+Text HLabel 6500 4650 2    50   Output ~ 0
 PwmCL
-Text HLabel 5950 2450 2    50   Output ~ 0
+Text HLabel 6700 2450 2    50   Output ~ 0
 PwmCH
 Text Label 5500 3750 0    50   ~ 0
 EEPROM_SCL
@@ -8329,7 +8329,7 @@ Connection ~ 9600 2250
 Wire Wire Line
 	9600 2250 9750 2250
 Wire Wire Line
-	5300 4450 5950 4450
+	5300 4450 5650 4450
 Wire Wire Line
 	1350 6150 7350 6150
 Wire Wire Line
@@ -8689,4 +8689,148 @@ NoConn ~ 4000 3950
 NoConn ~ 4000 3850
 NoConn ~ 4000 3750
 NoConn ~ 4000 3650
+$Comp
+L Device:R R?
+U 1 1 5DC3BA15
+P 6000 2250
+AR Path="/5D218B72/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5D221736/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5D221C45/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D218B72/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221736/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221C45/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/5DC3BA15" Ref="R?"  Part="1" 
+AR Path="/5DB60D99/5DC3BA15" Ref="R609"  Part="1" 
+F 0 "R609" V 6000 2250 50  0000 C CNN
+F 1 "1R1" V 5950 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 2250 50  0001 C CNN
+F 3 "~" H 6000 2250 50  0001 C CNN
+F 4 "MCR03ERTJ1R1" V 5950 2650 50  0000 C CNN "Part#"
+	1    6000 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 2250 6700 2250
+$Comp
+L Device:R R?
+U 1 1 5DC47F68
+P 6000 2350
+AR Path="/5D218B72/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5D221736/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5D221C45/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D218B72/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221736/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221C45/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/5DC47F68" Ref="R?"  Part="1" 
+AR Path="/5DB60D99/5DC47F68" Ref="R610"  Part="1" 
+F 0 "R610" V 6000 2350 50  0000 C CNN
+F 1 "1R1" V 5950 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 2350 50  0001 C CNN
+F 3 "~" H 6000 2350 50  0001 C CNN
+F 4 "MCR03ERTJ1R1" V 5950 2750 50  0000 C CNN "Part#"
+	1    6000 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 2350 5300 2350
+$Comp
+L Device:R R?
+U 1 1 5DC48337
+P 6000 2450
+AR Path="/5D218B72/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5D221736/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5D221C45/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D218B72/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221736/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221C45/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/5DC48337" Ref="R?"  Part="1" 
+AR Path="/5DB60D99/5DC48337" Ref="R611"  Part="1" 
+F 0 "R611" V 6000 2450 50  0000 C CNN
+F 1 "1R1" V 5950 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 2450 50  0001 C CNN
+F 3 "~" H 6000 2450 50  0001 C CNN
+F 4 "MCR03ERTJ1R1" V 5950 2850 50  0000 C CNN "Part#"
+	1    6000 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 2450 6700 2450
+$Comp
+L Device:R R?
+U 1 1 5DC484B4
+P 5800 4450
+AR Path="/5D218B72/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5D221736/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5D221C45/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D218B72/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221736/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221C45/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/5DC484B4" Ref="R?"  Part="1" 
+AR Path="/5DB60D99/5DC484B4" Ref="R606"  Part="1" 
+F 0 "R606" V 5800 4450 50  0000 C CNN
+F 1 "1R1" V 5750 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 4450 50  0001 C CNN
+F 3 "~" H 5800 4450 50  0001 C CNN
+F 4 "MCR03ERTJ1R1" V 5750 4850 50  0000 C CNN "Part#"
+	1    5800 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 4450 6500 4450
+$Comp
+L Device:R R?
+U 1 1 5DC5F521
+P 5800 4550
+AR Path="/5D218B72/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5D221736/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5D221C45/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D218B72/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221736/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221C45/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/5DC5F521" Ref="R?"  Part="1" 
+AR Path="/5DB60D99/5DC5F521" Ref="R607"  Part="1" 
+F 0 "R607" V 5800 4550 50  0000 C CNN
+F 1 "1R1" V 5750 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 4550 50  0001 C CNN
+F 3 "~" H 5800 4550 50  0001 C CNN
+F 4 "MCR03ERTJ1R1" V 5750 4950 50  0000 C CNN "Part#"
+	1    5800 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 4550 6500 4550
+$Comp
+L Device:R R?
+U 1 1 5DC5F8D6
+P 5800 4650
+AR Path="/5D218B72/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5D221736/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5D221C45/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D218B72/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221736/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5DB33F8E/5D221C45/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/5DC5F8D6" Ref="R?"  Part="1" 
+AR Path="/5DB60D99/5DC5F8D6" Ref="R608"  Part="1" 
+F 0 "R608" V 5800 4650 50  0000 C CNN
+F 1 "1R1" V 5750 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 4650 50  0001 C CNN
+F 3 "~" H 5800 4650 50  0001 C CNN
+F 4 "MCR03ERTJ1R1" V 5750 5050 50  0000 C CNN "Part#"
+	1    5800 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 4650 6500 4650
 $EndSCHEMATC

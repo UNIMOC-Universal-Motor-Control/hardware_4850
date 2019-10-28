@@ -152,6 +152,7 @@ F 0 "J103" H 7500 1817 50  0000 C CNN
 F 1 "PWM" H 7500 1726 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 7450 1400 50  0001 C CNN
 F 3 "~" H 7450 1400 50  0001 C CNN
+F 4 "C261072" H 7450 1400 50  0001 C CNN "Part#"
 	1    7450 1400
 	1    0    0    -1  
 $EndComp
@@ -255,6 +256,7 @@ F 0 "J101" H 4500 1917 50  0000 C CNN
 F 1 "PWM" H 4500 1826 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 4450 1500 50  0001 C CNN
 F 3 "~" H 4450 1500 50  0001 C CNN
+F 4 "C124391" H 4450 1500 50  0001 C CNN "Part#"
 	1    4450 1500
 	1    0    0    -1  
 $EndComp
@@ -268,6 +270,7 @@ F 0 "J102" H 4650 3517 50  0000 C CNN
 F 1 "ADC" H 4650 3426 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 4600 3100 50  0001 C CNN
 F 3 "~" H 4600 3100 50  0001 C CNN
+F 4 "C124391" H 4600 3100 50  0001 C CNN "Part#"
 	1    4600 3100
 	-1   0    0    -1  
 $EndComp
@@ -749,6 +752,7 @@ F 0 "J104" H 7500 5867 50  0000 C CNN
 F 1 "ADC" H 7500 5776 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 7450 5450 50  0001 C CNN
 F 3 "~" H 7450 5450 50  0001 C CNN
+F 4 "C261072" H 7450 5450 50  0001 C CNN "Part#"
 	1    7450 5450
 	1    0    0    -1  
 $EndComp
@@ -787,4 +791,31 @@ F 3 "~" H 6100 900 50  0001 C CNN
 	1    6100 900 
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:Housing_Pad N101
+U 1 1 5DB7B76B
+P 7950 6050
+F 0 "N101" H 8128 6108 50  0000 L CNN
+F 1 "Housing_Pad" H 8128 6017 50  0000 L CNN
+F 2 "hardware_4850:RND-455-00370" H 8025 6100 50  0001 C CNN
+F 3 "~" H 8025 6100 50  0001 C CNN
+F 4 "RND 455-00370" H 8128 5926 50  0000 L CNN "Part#"
+	1    7950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5DB831AA
+P 7750 6350
+AR Path="/5DB33F8E/5DB831AA" Ref="#PWR?"  Part="1" 
+AR Path="/5DB831AA" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 7750 6150 50  0001 C CNN
+F 1 "GNDPWR" H 7754 6196 50  0000 C CNN
+F 2 "" H 7750 6300 50  0001 C CNN
+F 3 "" H 7750 6300 50  0001 C CNN
+	1    7750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 6250 7750 6350
 $EndSCHEMATC
