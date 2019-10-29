@@ -172,14 +172,14 @@ $EndComp
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5DB60CA7
-P 8000 3600
+P 8000 1800
 AR Path="/5DB33F8E/5DB60CA7" Ref="#PWR?"  Part="1" 
 AR Path="/5DB60CA7" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 8000 3400 50  0001 C CNN
-F 1 "GNDPWR" H 8004 3446 50  0000 C CNN
-F 2 "" H 8000 3550 50  0001 C CNN
-F 3 "" H 8000 3550 50  0001 C CNN
-	1    8000 3600
+F 0 "#PWR0111" H 8000 1600 50  0001 C CNN
+F 1 "GNDPWR" H 8004 1646 50  0000 C CNN
+F 2 "" H 8000 1750 50  0001 C CNN
+F 3 "" H 8000 1750 50  0001 C CNN
+	1    8000 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -216,8 +216,6 @@ Wire Wire Line
 	7100 1200 7100 900 
 Wire Wire Line
 	7750 1200 8000 1200
-Wire Wire Line
-	8000 1200 8000 2050
 Wire Wire Line
 	8700 1550 9150 1550
 Wire Wire Line
@@ -426,157 +424,6 @@ F 3 "~" H 8100 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 4850 8100 4950
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 5DB60D49
-P 7050 1850
-AR Path="/5DB33F8E/5DB60D49" Ref="H?"  Part="1" 
-AR Path="/5DB60D49" Ref="H105"  Part="1" 
-F 0 "H105" H 7150 1899 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7150 1808 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 7050 1850 50  0001 C CNN
-F 3 "~" H 7050 1850 50  0001 C CNN
-	1    7050 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 5DB60D4F
-P 7050 2350
-AR Path="/5DB33F8E/5DB60D4F" Ref="H?"  Part="1" 
-AR Path="/5DB60D4F" Ref="H106"  Part="1" 
-F 0 "H106" H 7150 2399 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7150 2308 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 7050 2350 50  0001 C CNN
-F 3 "~" H 7050 2350 50  0001 C CNN
-	1    7050 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 5DB60D55
-P 7050 2850
-AR Path="/5DB33F8E/5DB60D55" Ref="H?"  Part="1" 
-AR Path="/5DB60D55" Ref="H107"  Part="1" 
-F 0 "H107" H 7150 2899 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7150 2808 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 7050 2850 50  0001 C CNN
-F 3 "~" H 7050 2850 50  0001 C CNN
-	1    7050 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 5DB60D5B
-P 7050 3300
-AR Path="/5DB33F8E/5DB60D5B" Ref="H?"  Part="1" 
-AR Path="/5DB60D5B" Ref="H108"  Part="1" 
-F 0 "H108" H 7150 3349 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7150 3258 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 7050 3300 50  0001 C CNN
-F 3 "~" H 7050 3300 50  0001 C CNN
-	1    7050 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8000 3500 7050 3500
-Wire Wire Line
-	7050 3500 7050 3400
-Connection ~ 8000 3500
-Wire Wire Line
-	8000 3500 8000 3600
-Wire Wire Line
-	7050 2950 7050 3050
-Wire Wire Line
-	7050 3050 8000 3050
-Connection ~ 8000 3050
-Wire Wire Line
-	8000 3050 8000 3500
-Wire Wire Line
-	7050 2450 7050 2550
-Wire Wire Line
-	7050 2550 8000 2550
-Connection ~ 8000 2550
-Wire Wire Line
-	8000 2550 8000 3050
-Wire Wire Line
-	7050 1950 7050 2050
-Wire Wire Line
-	7050 2050 8000 2050
-Connection ~ 8000 2050
-Wire Wire Line
-	8000 2050 8000 2550
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 5DB60D71
-P 3650 5300
-AR Path="/5DB33F8E/5DB60D71" Ref="H?"  Part="1" 
-AR Path="/5DB60D71" Ref="H101"  Part="1" 
-F 0 "H101" H 3750 5349 50  0000 L CNN
-F 1 "MountingHole_Pad" H 3750 5258 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 3650 5300 50  0001 C CNN
-F 3 "~" H 3650 5300 50  0001 C CNN
-	1    3650 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 5400 3650 5500
-Wire Wire Line
-	3650 5500 4600 5500
-$Comp
-L power:GNDD #PWR?
-U 1 1 5DB60D79
-P 4600 7250
-AR Path="/5DB33F8E/5DB60D79" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60D79" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 4600 7000 50  0001 C CNN
-F 1 "GNDD" H 4604 7095 50  0000 C CNN
-F 2 "" H 4600 7250 50  0001 C CNN
-F 3 "" H 4600 7250 50  0001 C CNN
-	1    4600 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 5500 4600 7250
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5DB60D80
-P 3650 5800
-AR Path="/5DB33F8E/5DB60D80" Ref="H?"  Part="1" 
-AR Path="/5DB60D80" Ref="H102"  Part="1" 
-F 0 "H102" H 3750 5846 50  0000 L CNN
-F 1 "MountingHole" H 3750 5755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 3650 5800 50  0001 C CNN
-F 3 "~" H 3650 5800 50  0001 C CNN
-	1    3650 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5DB60D86
-P 3650 6150
-AR Path="/5DB33F8E/5DB60D86" Ref="H?"  Part="1" 
-AR Path="/5DB60D86" Ref="H103"  Part="1" 
-F 0 "H103" H 3750 6196 50  0000 L CNN
-F 1 "MountingHole" H 3750 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 3650 6150 50  0001 C CNN
-F 3 "~" H 3650 6150 50  0001 C CNN
-	1    3650 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5DB60D8C
-P 3650 6550
-AR Path="/5DB33F8E/5DB60D8C" Ref="H?"  Part="1" 
-AR Path="/5DB60D8C" Ref="H104"  Part="1" 
-F 0 "H104" H 3750 6596 50  0000 L CNN
-F 1 "MountingHole" H 3750 6505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 3650 6550 50  0001 C CNN
-F 3 "~" H 3650 6550 50  0001 C CNN
-	1    3650 6550
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 950  1200 2100 4150
 U 5DB60D99
@@ -818,4 +665,6 @@ F 3 "" H 7750 6300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7750 6250 7750 6350
+Wire Wire Line
+	8000 1200 8000 1800
 $EndSCHEMATC

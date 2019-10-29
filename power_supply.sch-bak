@@ -252,7 +252,7 @@ Wire Wire Line
 	5150 5650 5150 6100
 Connection ~ 5150 6100
 Wire Wire Line
-	5150 6100 6450 6100
+	5150 6100 6000 6100
 Wire Wire Line
 	5650 5050 5800 5050
 Wire Wire Line
@@ -946,4 +946,26 @@ F 3 "" H 9050 3300 50  0001 C CNN
 	1    9050 3300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5DC3320E
+P 6000 5750
+AR Path="/5D16D6F1/5D1B49D9/5DC3320E" Ref="D?"  Part="1" 
+AR Path="/5D16D6F1/5DC3320E" Ref="D?"  Part="1" 
+AR Path="/5DB60C83/5DC3320E" Ref="D?"  Part="1" 
+F 0 "D?" H 6000 5850 50  0000 C CNN
+F 1 "SS110R3G" H 6000 5650 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 6000 5750 50  0001 C CNN
+F 3 "" H 6000 5750 50  0001 C CNN
+F 4 "SS110R3G" H 6000 5550 50  0000 C CNN "Part#"
+	1    6000 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 5250 6000 5600
+Wire Wire Line
+	6000 5900 6000 6100
+Connection ~ 6000 6100
+Wire Wire Line
+	6000 6100 6450 6100
 $EndSCHEMATC
