@@ -412,11 +412,11 @@ Connection ~ 3050 2300
 Wire Wire Line
 	2750 2550 3600 2550
 Connection ~ 2750 2550
-Text HLabel 3600 2050 2    50   Output ~ 0
+Text HLabel 3600 2550 2    50   Output ~ 0
 HallA
 Text HLabel 3600 2300 2    50   Output ~ 0
 HallB
-Text HLabel 3600 2550 2    50   Output ~ 0
+Text HLabel 3600 2050 2    50   Output ~ 0
 HallC
 $Comp
 L Device:R R?
@@ -573,28 +573,28 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J1103
 U 1 1 5D9FF99B
-P 10150 1650
-F 0 "J1103" H 10230 1687 50  0000 L CNN
-F 1 "CAN_IN" H 10230 1596 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10150 1650 50  0001 C CNN
-F 3 "~" H 10150 1650 50  0001 C CNN
-F 4 "" H 10230 1505 50  0000 L CNN "#Part"
-F 5 "C31753" H 10150 1650 50  0001 C CNN "Part#"
-	1    10150 1650
-	1    0    0    -1  
+P 10150 1750
+F 0 "J1103" H 10230 1787 50  0000 L CNN
+F 1 "CAN_IN" H 10230 1696 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 10150 1750 50  0001 C CNN
+F 3 "~" H 10150 1750 50  0001 C CNN
+F 4 "" H 10230 1605 50  0000 L CNN "#Part"
+F 5 "C157926" H 10150 1750 50  0001 C CNN "Part#"
+	1    10150 1750
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J1104
 U 1 1 5DA00603
-P 10150 2650
-F 0 "J1104" H 10230 2687 50  0000 L CNN
-F 1 "CAN_Out" H 10230 2596 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10150 2650 50  0001 C CNN
-F 3 "~" H 10150 2650 50  0001 C CNN
-F 4 "" H 10230 2505 50  0000 L CNN "#Part"
-F 5 "C31753" H 10150 2650 50  0001 C CNN "Part#"
-	1    10150 2650
-	1    0    0    -1  
+P 10150 2750
+F 0 "J1104" H 10230 2787 50  0000 L CNN
+F 1 "CAN_Out" H 10230 2696 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 10150 2750 50  0001 C CNN
+F 3 "~" H 10150 2750 50  0001 C CNN
+F 4 "" H 10230 2605 50  0000 L CNN "#Part"
+F 5 "C157926" H 10150 2750 50  0001 C CNN "Part#"
+	1    10150 2750
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R?
@@ -710,10 +710,11 @@ U 1 1 5DBC3941
 P 1400 3150
 F 0 "J1101" H 1318 3567 50  0000 C CNN
 F 1 "HALL" H 1318 3476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 1400 3150 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S5B-PH-K_1x05_P2.00mm_Horizontal" H 1400 3150 50  0001 C CNN
 F 3 "~" H 1400 3150 50  0001 C CNN
+F 4 "C157923" H 1400 3150 50  0001 C CNN "Part#"
 	1    1400 3150
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1600 2950 1750 2950
@@ -927,9 +928,9 @@ U 1 1 5DC290C8
 P 3350 4800
 F 0 "J1102" H 3430 4792 50  0000 L CNN
 F 1 "Enable" H 3430 4701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 3350 4800 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3350 4800 50  0001 C CNN
 F 3 "~" H 3350 4800 50  0001 C CNN
-F 4 "C169024" H 3350 4800 50  0001 C CNN "Part#"
+F 4 "C157929" H 3350 4800 50  0001 C CNN "Part#"
 	1    3350 4800
 	1    0    0    -1  
 $EndComp
