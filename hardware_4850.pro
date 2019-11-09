@@ -1,4 +1,4 @@
-update=08.11.2019 22:44:49
+update=09.11.2019 20:07:53
 version=1
 last_client=kicad
 [general]
@@ -247,6 +247,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=Dig Supply
+Clearance=0.2
+TrackWidth=0.4
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=GateDrive
 Clearance=0.2
 TrackWidth=0.5
