@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 102)
+    (drawings 104)
     (tracks 3152)
     (zones 0)
     (modules 289)
@@ -13598,6 +13598,8 @@
     )
   )
 
+  (gr_line (start 180.25 138) (end 264.25 59) (layer Dwgs.User) (width 0.15))
+  (gr_line (start 180.25 59) (end 264.25 138) (layer Dwgs.User) (width 0.15))
   (gr_arc (start 181.25 60) (end 181.25 59) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5DBAF828))
   (gr_line (start 180.25 137) (end 180.25 60) (layer Edge.Cuts) (width 0.05) (tstamp 5DBAF827))
   (gr_arc (start 263.25 137) (end 263.25 138) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5DBAF826))
