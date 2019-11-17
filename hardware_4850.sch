@@ -172,14 +172,14 @@ $EndComp
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5DB60CA7
-P 8000 2400
+P 8000 3000
 AR Path="/5DB33F8E/5DB60CA7" Ref="#PWR?"  Part="1" 
 AR Path="/5DB60CA7" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 8000 2200 50  0001 C CNN
-F 1 "GNDPWR" H 8004 2246 50  0000 C CNN
-F 2 "" H 8000 2350 50  0001 C CNN
-F 3 "" H 8000 2350 50  0001 C CNN
-	1    8000 2400
+F 0 "#PWR0111" H 8000 2800 50  0001 C CNN
+F 1 "GNDPWR" H 8004 2846 50  0000 C CNN
+F 2 "" H 8000 2950 50  0001 C CNN
+F 3 "" H 8000 2950 50  0001 C CNN
+	1    8000 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -693,21 +693,7 @@ Wire Wire Line
 	8000 1950 8000 2200
 Connection ~ 8000 2200
 Wire Wire Line
-	8000 2200 8000 2400
-$Comp
-L Mechanical:Housing_Pad N102
-U 1 1 5DC9F2D0
-P 4800 4300
-F 0 "N102" H 4978 4358 50  0000 L CNN
-F 1 "Housing_Pad" H 4978 4267 50  0000 L CNN
-F 2 "hardware_4850:RND-455-00370" H 4875 4350 50  0001 C CNN
-F 3 "~" H 4875 4350 50  0001 C CNN
-F 4 "for planning only" H 4978 4176 50  0000 L CNN "Part#"
-	1    4800 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 4500 4600 4600
+	8000 2200 8000 2450
 $Comp
 L power:GNDD #PWR?
 U 1 1 5DCA2780
@@ -721,4 +707,83 @@ F 3 "" H 4600 4600 50  0001 C CNN
 	1    4600 4600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H104
+U 1 1 5DD1E036
+P 7550 2450
+F 0 "H104" V 7504 2600 50  0000 L CNN
+F 1 "GND" V 7595 2600 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 7550 2450 50  0001 C CNN
+F 3 "~" H 7550 2450 50  0001 C CNN
+	1    7550 2450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H107
+U 1 1 5DD1E3F1
+P 7550 2700
+F 0 "H107" V 7504 2850 50  0000 L CNN
+F 1 "GND" V 7595 2850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 7550 2700 50  0001 C CNN
+F 3 "~" H 7550 2700 50  0001 C CNN
+	1    7550 2700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7650 2450 8000 2450
+Connection ~ 8000 2450
+Wire Wire Line
+	8000 2450 8000 2700
+Wire Wire Line
+	7650 2700 8000 2700
+Connection ~ 8000 2700
+Wire Wire Line
+	8000 2700 8000 3000
+$Comp
+L Mechanical:MountingHole_Pad H101
+U 1 1 5DD29FFD
+P 4150 3850
+F 0 "H101" V 4104 4000 50  0000 L CNN
+F 1 "GND" V 4195 4000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4150 3850 50  0001 C CNN
+F 3 "~" H 4150 3850 50  0001 C CNN
+	1    4150 3850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4250 3850 4600 3850
+$Comp
+L Mechanical:MountingHole_Pad H102
+U 1 1 5DD2A004
+P 4150 4100
+F 0 "H102" V 4104 4250 50  0000 L CNN
+F 1 "GND" V 4195 4250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 4150 4100 50  0001 C CNN
+F 3 "~" H 4150 4100 50  0001 C CNN
+	1    4150 4100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H103
+U 1 1 5DD2A00A
+P 4150 4350
+F 0 "H103" V 4104 4500 50  0000 L CNN
+F 1 "GND" V 4195 4500 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 4150 4350 50  0001 C CNN
+F 3 "~" H 4150 4350 50  0001 C CNN
+	1    4150 4350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4250 4100 4600 4100
+Wire Wire Line
+	4250 4350 4600 4350
+Wire Wire Line
+	4600 3850 4600 4100
+Wire Wire Line
+	4600 4100 4600 4350
+Connection ~ 4600 4100
+Wire Wire Line
+	4600 4350 4600 4600
+Connection ~ 4600 4350
 $EndSCHEMATC
