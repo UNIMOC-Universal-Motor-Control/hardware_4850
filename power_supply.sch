@@ -1013,4 +1013,39 @@ Wire Wire Line
 Wire Wire Line
 	2750 1250 2550 1250
 Connection ~ 3150 3150
+$Comp
+L Device:D_Schottky D506
+U 1 1 5DD63552
+P 6150 950
+F 0 "D506" H 6300 900 50  0000 C CNN
+F 1 "PMLL4153" H 6150 1150 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6150 950 50  0001 C CNN
+F 3 "~" H 6150 950 50  0001 C CNN
+F 4 "PMLL4153,115" H 6150 1050 50  0000 C CNN "Part#"
+	1    6150 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 950  5800 950 
+Wire Wire Line
+	5800 950  5800 1250
+Connection ~ 5800 1250
+$Comp
+L power:+12V #PWR?
+U 1 1 5DD7413A
+P 6650 850
+AR Path="/5D16D6F1/5D1B49D9/5DD7413A" Ref="#PWR?"  Part="1" 
+AR Path="/5D16D6F1/5DD7413A" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60C83/5DD7413A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6650 700 50  0001 C CNN
+F 1 "+12V" H 6650 990 50  0000 C CNN
+F 2 "" H 6650 850 50  0000 C CNN
+F 3 "" H 6650 850 50  0000 C CNN
+	1    6650 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 950  6650 950 
+Wire Wire Line
+	6650 950  6650 850 
 $EndSCHEMATC

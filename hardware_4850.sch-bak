@@ -708,10 +708,10 @@ F 3 "" H 4600 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H104
 U 1 1 5DD1E036
 P 7550 2450
-F 0 "H?" V 7504 2600 50  0000 L CNN
+F 0 "H104" V 7504 2600 50  0000 L CNN
 F 1 "GND" V 7595 2600 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 7550 2450 50  0001 C CNN
 F 3 "~" H 7550 2450 50  0001 C CNN
@@ -719,10 +719,10 @@ F 3 "~" H 7550 2450 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H107
 U 1 1 5DD1E3F1
 P 7550 2700
-F 0 "H?" V 7504 2850 50  0000 L CNN
+F 0 "H107" V 7504 2850 50  0000 L CNN
 F 1 "GND" V 7595 2850 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 7550 2700 50  0001 C CNN
 F 3 "~" H 7550 2700 50  0001 C CNN
@@ -740,10 +740,10 @@ Connection ~ 8000 2700
 Wire Wire Line
 	8000 2700 8000 3000
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H101
 U 1 1 5DD29FFD
 P 4150 3850
-F 0 "H?" V 4104 4000 50  0000 L CNN
+F 0 "H101" V 4104 4000 50  0000 L CNN
 F 1 "GND" V 4195 4000 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4150 3850 50  0001 C CNN
 F 3 "~" H 4150 3850 50  0001 C CNN
@@ -753,10 +753,10 @@ $EndComp
 Wire Wire Line
 	4250 3850 4600 3850
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H102
 U 1 1 5DD2A004
 P 4150 4100
-F 0 "H?" V 4104 4250 50  0000 L CNN
+F 0 "H102" V 4104 4250 50  0000 L CNN
 F 1 "GND" V 4195 4250 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 4150 4100 50  0001 C CNN
 F 3 "~" H 4150 4100 50  0001 C CNN
@@ -764,10 +764,10 @@ F 3 "~" H 4150 4100 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H103
 U 1 1 5DD2A00A
 P 4150 4350
-F 0 "H?" V 4104 4500 50  0000 L CNN
+F 0 "H103" V 4104 4500 50  0000 L CNN
 F 1 "GND" V 4195 4500 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 4150 4350 50  0001 C CNN
 F 3 "~" H 4150 4350 50  0001 C CNN
