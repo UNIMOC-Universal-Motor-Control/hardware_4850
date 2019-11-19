@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 11
+Sheet 2 11
 Title "Phase"
 Date "2019-06-27"
 Rev "1"
@@ -177,12 +177,10 @@ Wire Wire Line
 Connection ~ 7650 2650
 Wire Wire Line
 	7650 2650 7650 2200
-Wire Wire Line
-	3250 2450 3600 2450
 $Comp
 L Device:C C?
 U 1 1 5D381300
-P 3600 2300
+P 3600 2150
 AR Path="/5D218B72/5D381300" Ref="C?"  Part="1" 
 AR Path="/5D221736/5D381300" Ref="C?"  Part="1" 
 AR Path="/5D221C45/5D381300" Ref="C?"  Part="1" 
@@ -192,22 +190,14 @@ AR Path="/5DB33F8E/5D221C45/5D381300" Ref="C?"  Part="1"
 AR Path="/5DB60C4A/5D381300" Ref="C203"  Part="1" 
 AR Path="/5DB60C50/5D381300" Ref="C303"  Part="1" 
 AR Path="/5DB60C56/5D381300" Ref="C403"  Part="1" 
-F 0 "C403" V 3550 2350 50  0000 L CNN
-F 1 "10u" V 3650 2350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3638 2150 50  0001 C CNN
-F 3 "~" H 3600 2300 50  0001 C CNN
-F 4 "CC1206ZKY5V8BB106" V 3750 2550 50  0000 C CNN "Part#"
-	1    3600 2300
+F 0 "C403" V 3550 2200 50  0000 L CNN
+F 1 "10u" V 3650 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3638 2000 50  0001 C CNN
+F 3 "~" H 3600 2150 50  0001 C CNN
+F 4 "CC1206ZKY5V8BB106" V 3750 2400 50  0000 C CNN "Part#"
+	1    3600 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 2050 3600 2050
-Wire Wire Line
-	3600 2050 3600 2150
-Wire Wire Line
-	3600 2450 3600 2550
-Wire Wire Line
-	3600 2550 3250 2550
 Wire Wire Line
 	3250 2650 4500 2650
 Wire Wire Line
@@ -278,27 +268,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 1300 2450 1450
 Connection ~ 2450 1450
-$Comp
-L Device:R_Shunt R?
-U 1 1 5D3B35DC
-P 9150 2650
-AR Path="/5D218B72/5D3B35DC" Ref="R?"  Part="1" 
-AR Path="/5D221736/5D3B35DC" Ref="R?"  Part="1" 
-AR Path="/5D221C45/5D3B35DC" Ref="R?"  Part="1" 
-AR Path="/5DB33F8E/5D218B72/5D3B35DC" Ref="R?"  Part="1" 
-AR Path="/5DB33F8E/5D221736/5D3B35DC" Ref="R?"  Part="1" 
-AR Path="/5DB33F8E/5D221C45/5D3B35DC" Ref="R?"  Part="1" 
-AR Path="/5DB60C4A/5D3B35DC" Ref="R211"  Part="1" 
-AR Path="/5DB60C50/5D3B35DC" Ref="R311"  Part="1" 
-AR Path="/5DB60C56/5D3B35DC" Ref="R411"  Part="1" 
-F 0 "R411" V 9150 2650 50  0000 C CNN
-F 1 "1mR" V 9034 2650 50  0000 C CNN
-F 2 "hardware_4850:KWSL_4_Terminal_Shunt" V 9080 2650 50  0001 C CNN
-F 3 "~" H 9150 2650 50  0001 C CNN
-F 4 "KWSLF1L00Q9" V 8950 2650 50  0000 C CNN "Part#"
-	1    9150 2650
-	0    1    1    0   
-$EndComp
 Text HLabel 10300 2650 2    50   Output ~ 0
 Phase
 Wire Wire Line
@@ -690,9 +659,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 2200 4600 2550
 Wire Wire Line
-	4600 2550 3600 2550
-Connection ~ 3600 2550
-Wire Wire Line
 	5150 2200 5750 2200
 Connection ~ 5750 2200
 Wire Wire Line
@@ -806,19 +772,11 @@ Connection ~ 9100 850
 Wire Wire Line
 	9100 850  9100 1300
 Wire Wire Line
-	9250 2800 9250 2900
-Wire Wire Line
-	9250 2900 9150 2900
-Wire Wire Line
-	9150 2900 9150 3900
+	9150 3050 9150 3900
 Wire Wire Line
 	9150 3900 9500 3900
 Wire Wire Line
-	9100 4100 9100 2900
-Wire Wire Line
-	9100 2900 9050 2900
-Wire Wire Line
-	9050 2900 9050 2800
+	9100 4100 9100 3050
 $Comp
 L Device:CP C?
 U 1 1 5DBB0B4E
@@ -866,10 +824,7 @@ $EndComp
 Wire Wire Line
 	2750 1450 2450 1450
 Wire Wire Line
-	3050 1450 3600 1450
-Wire Wire Line
-	3600 1450 3600 2050
-Connection ~ 3600 2050
+	3050 1450 3400 1450
 Wire Wire Line
 	9100 850  9450 850 
 Wire Wire Line
@@ -879,9 +834,6 @@ Wire Wire Line
 Connection ~ 9450 850 
 Wire Wire Line
 	9450 850  9750 850 
-Connection ~ 3600 2450
-Wire Wire Line
-	3600 2450 4500 2450
 $Comp
 L power:PWR_FLAG #FLG0107
 U 1 1 5DBFD0DF
@@ -902,4 +854,99 @@ Wire Wire Line
 	1000 2450 2650 2450
 Wire Wire Line
 	1000 2550 2650 2550
+$Comp
+L Device:R R201
+U 1 1 5DC8EB74
+P 9150 2400
+AR Path="/5DB60C4A/5DC8EB74" Ref="R201"  Part="1" 
+AR Path="/5DB60C50/5DC8EB74" Ref="R301"  Part="1" 
+AR Path="/5DB60C56/5DC8EB74" Ref="R401"  Part="1" 
+F 0 "R401" V 9150 2400 50  0000 C CNN
+F 1 "2mR" V 9034 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 9080 2400 50  0001 C CNN
+F 3 "~" H 9150 2400 50  0001 C CNN
+F 4 "MS122WF200NT4E" V 9100 2950 50  0000 C CNN "Part#"
+	1    9150 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 3050 9350 2900
+Wire Wire Line
+	9150 3050 9350 3050
+Wire Wire Line
+	9350 2650 9300 2650
+Connection ~ 9350 2650
+Wire Wire Line
+	8950 3050 8950 2900
+Wire Wire Line
+	8950 3050 9100 3050
+Wire Wire Line
+	8950 2650 9000 2650
+Connection ~ 8950 2650
+Wire Wire Line
+	9000 2400 8950 2400
+Wire Wire Line
+	8950 2400 8950 2650
+Wire Wire Line
+	9300 2400 9350 2400
+Wire Wire Line
+	9350 2400 9350 2650
+$Comp
+L Device:R R202
+U 1 1 5DCA6C06
+P 9150 2650
+AR Path="/5DB60C4A/5DCA6C06" Ref="R202"  Part="1" 
+AR Path="/5DB60C50/5DCA6C06" Ref="R302"  Part="1" 
+AR Path="/5DB60C56/5DCA6C06" Ref="R402"  Part="1" 
+F 0 "R402" V 9150 2650 50  0000 C CNN
+F 1 "2mR" V 9034 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 9080 2650 50  0001 C CNN
+F 3 "~" H 9150 2650 50  0001 C CNN
+F 4 "MS122WF200NT4E" V 9100 3200 50  0000 C CNN "Part#"
+	1    9150 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R211
+U 1 1 5DCAED72
+P 9150 2900
+AR Path="/5DB60C4A/5DCAED72" Ref="R211"  Part="1" 
+AR Path="/5DB60C50/5DCAED72" Ref="R311"  Part="1" 
+AR Path="/5DB60C56/5DCAED72" Ref="R411"  Part="1" 
+F 0 "R411" V 9150 2900 50  0000 C CNN
+F 1 "2mR" V 9034 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 9080 2900 50  0001 C CNN
+F 3 "~" H 9150 2900 50  0001 C CNN
+F 4 "MS122WF200NT4E" V 9100 3450 50  0000 C CNN "Part#"
+	1    9150 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 2900 9350 2900
+Connection ~ 9350 2900
+Wire Wire Line
+	9350 2900 9350 2650
+Wire Wire Line
+	9000 2900 8950 2900
+Connection ~ 8950 2900
+Wire Wire Line
+	8950 2900 8950 2650
+Wire Wire Line
+	3600 1450 3600 2000
+Wire Wire Line
+	3250 2550 3600 2550
+Wire Wire Line
+	3250 2450 4500 2450
+Wire Wire Line
+	3600 2550 3600 2300
+Connection ~ 3600 2550
+Wire Wire Line
+	3600 2550 4600 2550
+Wire Wire Line
+	3250 2050 3400 2050
+Wire Wire Line
+	3400 2050 3400 1450
+Connection ~ 3400 1450
+Wire Wire Line
+	3400 1450 3600 1450
 $EndSCHEMATC
