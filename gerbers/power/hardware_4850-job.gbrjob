@@ -1,0 +1,147 @@
+{
+  "Header":
+  {
+    "GenerationSoftware":
+    {
+      "Vendor":      "KiCad",
+      "Application": "Pcbnew",
+      "Version":     "(5.1.4)-1"
+    },
+    "CreationDate":  "2019-11-19T11:57:25+01:00"
+  },
+  "GeneralSpecs":
+  {
+    "ProjectId":
+    {
+      "Name": "hardware_4850",
+      "GUID": "68617264-7761-4726-955f-343835302e6b",
+      "Revision": "rev?"
+    },
+    "Size":
+    {
+      "X": 207.300,
+      "Y": 123.050
+    },
+    "LayerNumber": 4,
+    "BoardThickness":  1.600
+  },
+  "DesignRules":
+  [
+    {
+      "Layers": "Outer",
+      "PadToPad":  0.150,
+      "PadToTrack":  0.150,
+      "TrackToTrack":  0.150,
+      "MinLineWidth":  0.150,
+      "TrackToRegion":  0.150,
+      "RegionToRegion":  0.150
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad":  0.150,
+      "PadToTrack":  0.150,
+      "TrackToTrack":  0.150,
+      "MinLineWidth":  0.250,
+      "TrackToRegion":  0.200,
+      "RegionToRegion":  0.200
+    }
+  ],
+  "FilesAttributes":
+  [
+    {
+      "Path":  "hardware_4850-Top.gtl",
+      "FileFunction":  "Copper,L1,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "hardware_4850-Inner_Top.g2",
+      "FileFunction":  "Copper,L2,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "hardware_4850-Inner_Bottom.g3",
+      "FileFunction":  "Copper,L3,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "hardware_4850-Bottom.gbl",
+      "FileFunction":  "Copper,L4,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "hardware_4850-F_SilkS.gto",
+      "FileFunction":  "Legend,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "hardware_4850-B_SilkS.gbo",
+      "FileFunction":  "Legend,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "hardware_4850-F_Mask.gts",
+      "FileFunction":  "SolderMask,Top",
+      "FilePolarity":  "Negative"
+    },
+    {
+      "Path":  "hardware_4850-B_Mask.gbs",
+      "FileFunction":  "SolderMask,Bot",
+      "FilePolarity":  "Negative"
+    },
+    {
+      "Path":  "hardware_4850-Edge_Cuts.gm1",
+      "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    }
+  ],
+  "MaterialStackup":
+  [
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer F.SilkS"
+    },
+    {
+      "Type":  "SolderMask",
+      "Notes":  "Layer F.Mask"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Top"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L1/L2"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Inner_Top"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L2/L3"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Inner_Bottom"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L3/L4"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Bottom"
+    },
+    {
+      "Type":  "SolderMask",
+      "Notes":  "Layer B.Mask"
+    },
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer B.SilkS"
+    }
+  ]
+}
