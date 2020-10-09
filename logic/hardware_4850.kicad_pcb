@@ -14,7 +14,7 @@
     (0 Top mixed)
     (1 Inner_Top signal hide)
     (2 Inner_Bottom power hide)
-    (31 Bottom power)
+    (31 Bottom power hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -62,7 +62,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFDFFFF)
+    (visible_elements 7FFCFFFF)
     (pcbplotparams
       (layerselection 0x010f0_ffffffff)
       (usegerberextensions true)
