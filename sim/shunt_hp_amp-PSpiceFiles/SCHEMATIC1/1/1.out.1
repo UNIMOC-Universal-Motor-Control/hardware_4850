@@ -1,0 +1,157 @@
+
+**** 02/04/21 13:53:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ C:\Work\unimoc\hardware_4850\sim\shunt_hp_amp-PSpiceFiles\SCHEMATIC1\1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 250u 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SHUNT_HP_AMP
+X_U1         N00505 N00191 N00223 N00468 GND N00468 GND INA240A1 
+R_R1         N00223 N00191  1m TC=0,0 
+V_V1         N00191 GND  
++PULSE 0 48 10u 10n 10n 
+L_L1         N00294 N00223  500uH  
+V_V2         N00294 GND 24V
+V_V3         N00468 GND 3.3V
+
+**** RESUMING 1.cir ****
+.END
+
+**** 02/04/21 13:53:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ C:\Work\unimoc\hardware_4850\sim\shunt_hp_amp-PSpiceFiles\SCHEMATIC1\1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U32.DVN  
+          IS  100.000000E-18 
+          KF   10.000000E-18 
+
+
+**** 02/04/21 13:53:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ C:\Work\unimoc\hardware_4850\sim\shunt_hp_amp-PSpiceFiles\SCHEMATIC1\1.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U13.SW1  X_U1.X_U13.SW2  
+         RON  100             100            
+        ROFF    1.000000E+09    1.000000E+09 
+         VON     .1             -.1          
+        VOFF    0               0            
+
+
+Starting pseudo-transient algorithm.
+
+INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set following options to relax stabilization criteria for capacitor currents and inductor voltages: PTRANABSTOL=1e-5, PTRANVNTOL=1e-4
+
+ERROR(ORPSIM-16551): Floating point computation failed during Device/Model Load. Possible solutions: 1)Ensure that all device parameters are in valid range. 2)Try using .options LIMIT
+
+INTERNAL ERROR -- Divide by Zero in device L_L1, Divide
+
+ABORTING SIMULATION
+**** 02/04/21 13:53:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ C:\Work\unimoc\hardware_4850\sim\shunt_hp_amp-PSpiceFiles\SCHEMATIC1\1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           6
+  External (NCNODS)                 =          72
+  Total (NUMNOD)                    =          72
+
+Total device count (NUMEL)          =         109
+  Capacitors (C)                    =           9
+  Diodes (D)                        =           2
+  VCVS (E)                          =          46
+  VCCS (G)                          =          12
+  Current Sources (I)               =           2
+  Inductors (L)                     =           3
+  Resistors (R)                     =          24
+  VSwitches (S)                     =           2
+  Voltage Sources (V)               =           6
+
+Number of subcircuits (X)           =          12
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         127
+  Initial no. elements (NTTAR)      =         380
+  No. elements w/ fillin (NTTBR)    =         479
+  No. fillins (IFILL)               =          99
+  No. overflows (NTTOV)             =         219
+  No. LU operations (IOPS)          =         494
+  Percent sparsity (PERSPA)         =      97.030
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =       28835
+  No. rejected time points (NUMRTP) =        6784
+  No. iterations (NUMNIT)           =      181184
+
+Load Threads                        =           8
+
+Runtime statistics:                       Seconds      Iterations   Stopped At
+  Matrix load                       =        7.69
+  Matrix solution                   =         .86               4
+  Readin                            =         .53
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  Default algorithm                 =        -.05           -1050
+  GMIN stepping                     =         .03            1050     100.00m
+  Supply stepping                   =         .02               0       82.60%
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .06
+  License check-out time            =       22.67
+  Total job time (using Solver 1)   =        9.92
+
