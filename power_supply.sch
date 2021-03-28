@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 11
-Title "Power supply for 3V3 rail"
-Date "2019-06-29"
-Rev "1"
-Comp "ThunderDrive"
+Sheet 5 12
+Title "UNIMOC Hardware 4850"
+Date "2021-03-28"
+Rev "2"
+Comp "Thunderdrive GmbH"
 Comment1 ""
 Comment2 ""
 Comment3 ""

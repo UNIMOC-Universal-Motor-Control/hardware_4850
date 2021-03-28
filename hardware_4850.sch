@@ -3,15 +3,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 1 12
+Title "UNIMOC Hardware 4850"
+Date "2021-03-28"
+Rev "2"
+Comp "Thunderdrive GmbH"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Autor: Alexander Evers <tecnologic86@gmail.com>"
 $EndDescr
 $Sheet
 S 9150 1200 950  1050
@@ -798,5 +798,11 @@ F9 "PwmBH" O R 3100 2000 50
 F10 "PwmBL" O R 3100 1900 50 
 F11 "Temp-" I R 3100 3350 50 
 F12 "Temp+" I R 3100 3250 50 
+$EndSheet
+$Sheet
+S 4250 6650 1200 800 
+U 6061BA5E
+F0 "mcu" 50
+F1 "mcu.sch" 50
 $EndSheet
 $EndSCHEMATC

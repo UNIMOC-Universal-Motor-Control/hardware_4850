@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
-Title "Phase"
-Date "2019-06-27"
-Rev "1"
-Comp ""
+Sheet 2 12
+Title "UNIMOC Hardware 4850"
+Date "2021-03-28"
+Rev "2"
+Comp "Thunderdrive GmbH"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -948,4 +948,15 @@ Wire Wire Line
 Connection ~ 3400 1450
 Wire Wire Line
 	3400 1450 3600 1450
+$Comp
+L Transistor_FET:IPT020N10N3 Q?
+U 1 1 601F7875
+P 4750 4750
+F 0 "Q?" H 4954 4796 50  0000 L CNN
+F 1 "IPT020N10N3" H 4954 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1" H 4950 4675 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-IPT020N10N3-DS-v02_00-en.pdf?fileId=db3a30433e9d5d11013e9e58035b0158" H 4750 4750 50  0001 L CNN
+	1    4750 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

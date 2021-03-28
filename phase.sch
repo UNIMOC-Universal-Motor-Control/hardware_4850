@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
-Title "Phase"
-Date "2019-06-27"
-Rev "1"
-Comp ""
+Sheet 2 12
+Title "UNIMOC Hardware 4850"
+Date "2021-03-28"
+Rev "2"
+Comp "Thunderdrive GmbH"
 Comment1 ""
 Comment2 ""
 Comment3 ""
