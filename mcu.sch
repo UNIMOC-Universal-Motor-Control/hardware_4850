@@ -227,9 +227,9 @@ AR Path="/601CB20C/60656DE7" Ref="C?"  Part="1"
 AR Path="/6061BA5E/60656DE7" Ref="C?"  Part="1" 
 F 0 "C?" V 1650 7050 50  0000 L CNN
 F 1 "10u" V 1750 7050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1738 6850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1738 6850 50  0001 C CNN
 F 3 "~" H 1700 7000 50  0001 C CNN
-F 4 "C13585" V 1850 7100 50  0000 C CNN "LCSC#"
+F 4 "C15850" V 1850 7100 50  0000 C CNN "LCSC#"
 	1    1700 7000
 	1    0    0    -1  
 $EndComp
@@ -342,10 +342,10 @@ AR Path="/5DB60D99/60656E27" Ref="R?"  Part="1"
 AR Path="/601CB20C/60656E27" Ref="R?"  Part="1" 
 AR Path="/6061BA5E/60656E27" Ref="R?"  Part="1" 
 F 0 "R?" V 9900 2300 50  0000 L CNN
-F 1 "4k7" V 10000 2300 50  0000 L CNN
+F 1 "3k3" V 10000 2300 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 2350 50  0001 C CNN
 F 3 "~" H 9900 2350 50  0001 C CNN
-F 4 "C23162" V 9800 2350 50  0000 C CNN "LCSC#"
+F 4 "C22978" V 9800 2350 50  0000 C CNN "LCSC#"
 	1    9900 2350
 	0    1    1    0   
 $EndComp
@@ -621,9 +621,9 @@ AR Path="/601CB20C/606C00EA" Ref="C?"  Part="1"
 AR Path="/6061BA5E/606C00EA" Ref="C?"  Part="1" 
 F 0 "C?" V 1050 7050 50  0000 L CNN
 F 1 "10u" V 1150 7050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1138 6850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1138 6850 50  0001 C CNN
 F 3 "~" H 1100 7000 50  0001 C CNN
-F 4 "C13585" V 1250 7100 50  0000 C CNN "LCSC#"
+F 4 "C15850" V 1250 7100 50  0000 C CNN "LCSC#"
 	1    1100 7000
 	1    0    0    -1  
 $EndComp
@@ -721,23 +721,19 @@ Wire Wire Line
 Wire Wire Line
 	5550 5950 5900 5950
 Text HLabel 6250 5350 2    50   Output ~ 0
-PWM_A
+PWM_A+
 Text HLabel 6250 5450 2    50   Output ~ 0
-PWM_B
+PWM_B+
 Text HLabel 6250 5550 2    50   Output ~ 0
-PWM_C
+PWM_C+
 Text HLabel 6250 5750 2    50   Output ~ 0
-PWM_AN
+PWM_AN+
 Text HLabel 6250 5850 2    50   Output ~ 0
-PWM_BN
+PWM_BN+
 Text HLabel 6250 5950 2    50   Output ~ 0
-PWM_CN
+PWM_CN+
 Text HLabel 3150 4950 0    50   Input ~ 0
 PWM_BREAK
-Text HLabel 3150 4850 0    50   Output ~ 0
-PWM_CHOP
-Text HLabel 3150 4750 0    50   Output ~ 0
-PWM_CHOPN
 Wire Wire Line
 	3850 4950 3150 4950
 $Comp
@@ -745,8 +741,8 @@ L Device:Jumper_NC_Small JP?
 U 1 1 60716DCC
 P 6000 5350
 F 0 "JP?" H 5850 5400 50  0000 C CNN
-F 1 "PA" H 6150 5400 50  0000 C CNN
-F 2 "" H 6000 5350 50  0001 C CNN
+F 1 "PA+" H 6150 5400 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6000 5350 50  0001 C CNN
 F 3 "~" H 6000 5350 50  0001 C CNN
 	1    6000 5350
 	1    0    0    -1  
@@ -758,8 +754,8 @@ L Device:Jumper_NC_Small JP?
 U 1 1 6071A651
 P 6000 5450
 F 0 "JP?" H 5850 5500 50  0000 C CNN
-F 1 "PB" H 6150 5500 50  0000 C CNN
-F 2 "" H 6000 5450 50  0001 C CNN
+F 1 "PB+" H 6150 5500 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6000 5450 50  0001 C CNN
 F 3 "~" H 6000 5450 50  0001 C CNN
 	1    6000 5450
 	1    0    0    -1  
@@ -771,8 +767,8 @@ L Device:Jumper_NC_Small JP?
 U 1 1 6071AA58
 P 6000 5550
 F 0 "JP?" H 5850 5600 50  0000 C CNN
-F 1 "PC" H 6150 5600 50  0000 C CNN
-F 2 "" H 6000 5550 50  0001 C CNN
+F 1 "PC+" H 6150 5600 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6000 5550 50  0001 C CNN
 F 3 "~" H 6000 5550 50  0001 C CNN
 	1    6000 5550
 	1    0    0    -1  
@@ -784,8 +780,8 @@ L Device:Jumper_NC_Small JP?
 U 1 1 6071ACA8
 P 6000 5750
 F 0 "JP?" H 5850 5800 50  0000 C CNN
-F 1 "PAN" H 6150 5800 50  0000 C CNN
-F 2 "" H 6000 5750 50  0001 C CNN
+F 1 "PAN+" H 6150 5800 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6000 5750 50  0001 C CNN
 F 3 "~" H 6000 5750 50  0001 C CNN
 	1    6000 5750
 	1    0    0    -1  
@@ -797,8 +793,8 @@ L Device:Jumper_NC_Small JP?
 U 1 1 6071AFA3
 P 6000 5850
 F 0 "JP?" H 5850 5900 50  0000 C CNN
-F 1 "PBN" H 6150 5900 50  0000 C CNN
-F 2 "" H 6000 5850 50  0001 C CNN
+F 1 "PBN+" H 6150 5900 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6000 5850 50  0001 C CNN
 F 3 "~" H 6000 5850 50  0001 C CNN
 	1    6000 5850
 	1    0    0    -1  
@@ -810,18 +806,14 @@ L Device:Jumper_NC_Small JP?
 U 1 1 6071B19D
 P 6000 5950
 F 0 "JP?" H 5850 6000 50  0000 C CNN
-F 1 "PCN" H 6150 6000 50  0000 C CNN
-F 2 "" H 6000 5950 50  0001 C CNN
+F 1 "PCN+" H 6150 6000 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6000 5950 50  0001 C CNN
 F 3 "~" H 6000 5950 50  0001 C CNN
 	1    6000 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6100 5950 6250 5950
-Wire Wire Line
-	3150 4750 3850 4750
-Wire Wire Line
-	3150 4850 3850 4850
 Wire Wire Line
 	3850 3250 3150 3250
 Wire Wire Line
@@ -983,7 +975,7 @@ U 1 1 607E6B3C
 P 6950 950
 F 0 "TP?" H 7008 1068 50  0000 L CNN
 F 1 "IA_AC" H 7008 977 50  0000 L CNN
-F 2 "" H 7150 950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7150 950 50  0001 C CNN
 F 3 "~" H 7150 950 50  0001 C CNN
 	1    6950 950 
 	1    0    0    -1  
@@ -1003,7 +995,7 @@ Wire Wire Line
 Text Label 6250 4150 0    50   ~ 0
 IC_DC
 Wire Wire Line
-	3850 5950 3300 5950
+	3850 5950 3150 5950
 $Comp
 L Device:R R?
 U 1 1 60819F62
@@ -1080,7 +1072,7 @@ U 1 1 6082C32D
 P 8300 3800
 F 0 "TP?" H 8358 3918 50  0000 L CNN
 F 1 "IB_AC" H 8358 3827 50  0000 L CNN
-F 2 "" H 8500 3800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8500 3800 50  0001 C CNN
 F 3 "~" H 8500 3800 50  0001 C CNN
 	1    8300 3800
 	1    0    0    -1  
@@ -1234,7 +1226,7 @@ U 1 1 609BBF99
 P 6950 2150
 F 0 "TP?" V 6904 2338 50  0000 L CNN
 F 1 "IC_AC" V 6995 2338 50  0000 L CNN
-F 2 "" H 7150 2150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7150 2150 50  0001 C CNN
 F 3 "~" H 7150 2150 50  0001 C CNN
 	1    6950 2150
 	0    1    1    0   
@@ -1247,7 +1239,7 @@ Text Label 3150 3850 2    50   ~ 0
 IB_DC
 Wire Wire Line
 	3150 5650 3850 5650
-Text Label 3300 5950 2    50   ~ 0
+Text Label 3150 5950 2    50   ~ 0
 IA_DC
 Text Label 6250 4850 0    50   ~ 0
 IA_DC
@@ -1304,6 +1296,7 @@ F 1 "RUN" H 1100 4000 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 950 4050 50  0001 C CNN
 F 3 "" H 950 4050 50  0001 C CNN
 F 4 "C2286" H 950 3900 50  0000 C CNN "LCSC"
+F 5 "C2286" H 950 4050 50  0001 C CNN "LCSC#"
 	1    950  4050
 	0    -1   1    0   
 $EndComp
@@ -1644,4 +1637,141 @@ F 4 "C57112" V 10650 5150 50  0000 C CNN "LCSC#"
 	1    10500 5050
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 608BE0F4
+P 7400 5350
+F 0 "JP?" H 7250 5400 50  0000 C CNN
+F 1 "PA-" H 7550 5400 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7400 5350 50  0001 C CNN
+F 3 "~" H 7400 5350 50  0001 C CNN
+	1    7400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 608BEEB6
+P 7400 5450
+F 0 "JP?" H 7250 5500 50  0000 C CNN
+F 1 "PB-" H 7550 5500 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7400 5450 50  0001 C CNN
+F 3 "~" H 7400 5450 50  0001 C CNN
+	1    7400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 608BF05C
+P 7400 5550
+F 0 "JP?" H 7250 5600 50  0000 C CNN
+F 1 "PC-" H 7550 5600 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7400 5550 50  0001 C CNN
+F 3 "~" H 7400 5550 50  0001 C CNN
+	1    7400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 608BF1FD
+P 7400 5750
+F 0 "JP?" H 7250 5800 50  0000 C CNN
+F 1 "PAN-" H 7550 5800 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7400 5750 50  0001 C CNN
+F 3 "~" H 7400 5750 50  0001 C CNN
+	1    7400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 608BF6B4
+P 7400 5850
+F 0 "JP?" H 7250 5900 50  0000 C CNN
+F 1 "PBN-" H 7550 5900 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7400 5850 50  0001 C CNN
+F 3 "~" H 7400 5850 50  0001 C CNN
+	1    7400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 608BF8F5
+P 7400 5950
+F 0 "JP?" H 7250 6000 50  0000 C CNN
+F 1 "PCN-" H 7550 6000 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7400 5950 50  0001 C CNN
+F 3 "~" H 7400 5950 50  0001 C CNN
+	1    7400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 608C07C2
+P 7100 6150
+AR Path="/608C07C2" Ref="#PWR?"  Part="1" 
+AR Path="/5D1F70AC/608C07C2" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60D99/608C07C2" Ref="#PWR?"  Part="1" 
+AR Path="/601CB20C/608C07C2" Ref="#PWR?"  Part="1" 
+AR Path="/6061BA5E/608C07C2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7100 5900 50  0001 C CNN
+F 1 "GNDD" H 7104 5995 50  0000 C CNN
+F 2 "" H 7100 6150 50  0001 C CNN
+F 3 "" H 7100 6150 50  0001 C CNN
+	1    7100 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5350 7100 5350
+Wire Wire Line
+	7100 5350 7100 5450
+Wire Wire Line
+	7300 5450 7100 5450
+Connection ~ 7100 5450
+Wire Wire Line
+	7100 5450 7100 5550
+Wire Wire Line
+	7300 5550 7100 5550
+Connection ~ 7100 5550
+Wire Wire Line
+	7100 5550 7100 5750
+Wire Wire Line
+	7300 5750 7100 5750
+Connection ~ 7100 5750
+Wire Wire Line
+	7100 5750 7100 5850
+Wire Wire Line
+	7300 5850 7100 5850
+Connection ~ 7100 5850
+Wire Wire Line
+	7100 5850 7100 5950
+Wire Wire Line
+	7300 5950 7100 5950
+Connection ~ 7100 5950
+Wire Wire Line
+	7100 5950 7100 6150
+Wire Wire Line
+	7500 5350 7750 5350
+Wire Wire Line
+	7500 5450 7750 5450
+Wire Wire Line
+	7500 5550 7750 5550
+Wire Wire Line
+	7500 5750 7750 5750
+Wire Wire Line
+	7500 5850 7750 5850
+Wire Wire Line
+	7500 5950 7750 5950
+Text HLabel 7750 5350 2    50   Output ~ 0
+PWM_A-
+Text HLabel 7750 5450 2    50   Output ~ 0
+PWM_B-
+Text HLabel 7750 5550 2    50   Output ~ 0
+PWM_C-
+Text HLabel 7750 5750 2    50   Output ~ 0
+PWM_AN-
+Text HLabel 7750 5850 2    50   Output ~ 0
+PWM_BN-
+Text HLabel 7750 5950 2    50   Output ~ 0
+PWM_CN-
+NoConn ~ 3850 4750
+NoConn ~ 3850 4850
 $EndSCHEMATC
