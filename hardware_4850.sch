@@ -794,4 +794,15 @@ Wire Wire Line
 	6450 5300 6100 5300
 Wire Wire Line
 	6450 5400 6100 5400
+$Comp
+L Mechanical:Housing N1
+U 1 1 6064EF7E
+P 1450 7400
+F 0 "N1" H 1603 7434 50  0000 L CNN
+F 1 "Housing" H 1603 7343 50  0000 L CNN
+F 2 "footprints:HaiLong-Case" H 1500 7450 50  0001 C CNN
+F 3 "~" H 1500 7450 50  0001 C CNN
+	1    1450 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
