@@ -843,14 +843,6 @@ CAN_RX
 Text HLabel 6250 3650 2    50   Output ~ 0
 CAN_TX
 Wire Wire Line
-	5550 3750 6250 3750
-Text HLabel 6250 3750 2    50   BiDi ~ 0
-I2C_SDA
-Wire Wire Line
-	5550 2850 6250 2850
-Text HLabel 6250 2850 2    50   Output ~ 0
-I2C_SCL
-Wire Wire Line
 	5550 4850 6250 4850
 Wire Wire Line
 	5550 2050 6250 2050
@@ -1258,7 +1250,7 @@ Wire Wire Line
 Text HLabel 3150 4050 0    50   Input ~ 0
 AIN_CRK_TORQ
 Text HLabel 3150 4350 0    50   Input ~ 0
-AIN_TEMP
+AIN_TEMP_A
 Text Label 6250 5050 0    50   ~ 0
 IC_AC_IN
 $Comp
@@ -1431,7 +1423,6 @@ NoConn ~ 5550 6250
 NoConn ~ 5550 6150
 NoConn ~ 5550 6050
 NoConn ~ 5550 5650
-NoConn ~ 5550 5250
 NoConn ~ 5550 4950
 NoConn ~ 5550 4750
 NoConn ~ 5550 4450
@@ -1440,7 +1431,6 @@ NoConn ~ 3850 3650
 NoConn ~ 3850 3750
 NoConn ~ 3850 3950
 NoConn ~ 3850 4150
-NoConn ~ 3850 4250
 NoConn ~ 3850 4450
 NoConn ~ 3850 4550
 NoConn ~ 3850 5450
@@ -1741,4 +1731,14 @@ Wire Wire Line
 	5550 3450 6250 3450
 Text HLabel 6250 3450 2    50   Output ~ 0
 CAN_SLP
+NoConn ~ 5550 3750
+NoConn ~ 5550 2850
+Wire Wire Line
+	5550 5250 6250 5250
+Text HLabel 6250 5250 2    50   Input ~ 0
+AIN_TEMP_C
+Wire Wire Line
+	3850 4250 3150 4250
+Text HLabel 3150 4250 0    50   Input ~ 0
+AIN_TEMP_B
 $EndSCHEMATC
