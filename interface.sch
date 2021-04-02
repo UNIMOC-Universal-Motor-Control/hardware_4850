@@ -362,7 +362,7 @@ U 1 1 6065EA45
 P 3250 1500
 AR Path="/6065EA45" Ref="R?"  Part="1" 
 AR Path="/606501D4/6065EA45" Ref="R55"  Part="1" 
-F 0 "R55" V 3250 1450 50  0000 L CNN
+F 0 "R55" V 3250 1400 50  0000 L CNN
 F 1 "10k" H 3320 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 1500 50  0001 C CNN
 F 3 "~" H 3250 1500 50  0001 C CNN
@@ -769,7 +769,7 @@ AR Path="/606C4644" Ref="JP?"  Part="1"
 AR Path="/606501D4/606C4644" Ref="JP14"  Part="1" 
 F 0 "JP14" H 10350 2350 50  0000 C CNN
 F 1 "CAN_TX" H 10200 2450 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 10200 2300 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 10200 2300 50  0001 C CNN
 F 3 "~" H 10200 2300 50  0001 C CNN
 	1    10200 2300
 	-1   0    0    -1  
@@ -782,7 +782,7 @@ AR Path="/606C464A" Ref="JP?"  Part="1"
 AR Path="/606501D4/606C464A" Ref="JP15"  Part="1" 
 F 0 "JP15" H 10350 2450 50  0000 C CNN
 F 1 "CAN_RX" H 10200 2350 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 10200 2400 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 10200 2400 50  0001 C CNN
 F 3 "~" H 10200 2400 50  0001 C CNN
 	1    10200 2400
 	-1   0    0    -1  
@@ -795,7 +795,7 @@ AR Path="/606C4650" Ref="JP?"  Part="1"
 AR Path="/606501D4/606C4650" Ref="JP16"  Part="1" 
 F 0 "JP16" H 7700 3500 50  0000 C CNN
 F 1 "CAN_GND" H 7550 3400 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7550 3450 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 7550 3450 50  0001 C CNN
 F 3 "~" H 7550 3450 50  0001 C CNN
 	1    7550 3450
 	-1   0    0    -1  
