@@ -708,18 +708,6 @@ Wire Wire Line
 	650  600  650  850 
 Text Label 1100 600  0    50   ~ 0
 USB_VBUS
-Wire Wire Line
-	5550 5350 5900 5350
-Wire Wire Line
-	5550 5450 5900 5450
-Wire Wire Line
-	5550 5550 5900 5550
-Wire Wire Line
-	5550 5750 5900 5750
-Wire Wire Line
-	5550 5850 5900 5850
-Wire Wire Line
-	5550 5950 5900 5950
 Text HLabel 6250 5350 2    50   Output ~ 0
 PWM_A+
 Text HLabel 6250 5450 2    50   Output ~ 0
@@ -736,84 +724,6 @@ Text HLabel 3150 4950 0    50   Input ~ 0
 PWM_BREAK
 Wire Wire Line
 	3850 4950 3600 4950
-$Comp
-L Device:Jumper_NC_Small JP2
-U 1 1 60716DCC
-P 6000 5350
-F 0 "JP2" H 5850 5400 50  0000 C CNN
-F 1 "PA+" H 6150 5400 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6000 5350 50  0001 C CNN
-F 3 "~" H 6000 5350 50  0001 C CNN
-	1    6000 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 5350 6250 5350
-$Comp
-L Device:Jumper_NC_Small JP4
-U 1 1 6071A651
-P 6000 5450
-F 0 "JP4" H 5850 5500 50  0000 C CNN
-F 1 "PB+" H 6150 5500 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6000 5450 50  0001 C CNN
-F 3 "~" H 6000 5450 50  0001 C CNN
-	1    6000 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 5450 6250 5450
-$Comp
-L Device:Jumper_NC_Small JP6
-U 1 1 6071AA58
-P 6000 5550
-F 0 "JP6" H 5850 5600 50  0000 C CNN
-F 1 "PC+" H 6150 5600 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6000 5550 50  0001 C CNN
-F 3 "~" H 6000 5550 50  0001 C CNN
-	1    6000 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 5550 6250 5550
-$Comp
-L Device:Jumper_NC_Small JP8
-U 1 1 6071ACA8
-P 6000 5750
-F 0 "JP8" H 5850 5800 50  0000 C CNN
-F 1 "PAN+" H 6150 5800 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6000 5750 50  0001 C CNN
-F 3 "~" H 6000 5750 50  0001 C CNN
-	1    6000 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 5750 6250 5750
-$Comp
-L Device:Jumper_NC_Small JP10
-U 1 1 6071AFA3
-P 6000 5850
-F 0 "JP10" H 5850 5900 50  0000 C CNN
-F 1 "PBN+" H 6150 5900 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6000 5850 50  0001 C CNN
-F 3 "~" H 6000 5850 50  0001 C CNN
-	1    6000 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 5850 6250 5850
-$Comp
-L Device:Jumper_NC_Small JP12
-U 1 1 6071B19D
-P 6000 5950
-F 0 "JP12" H 5850 6000 50  0000 C CNN
-F 1 "PCN+" H 6150 6000 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6000 5950 50  0001 C CNN
-F 3 "~" H 6000 5950 50  0001 C CNN
-	1    6000 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 5950 6250 5950
 Wire Wire Line
 	3850 3250 3150 3250
 Wire Wire Line
@@ -1423,22 +1333,18 @@ NoConn ~ 5550 6250
 NoConn ~ 5550 6150
 NoConn ~ 5550 6050
 NoConn ~ 5550 5650
-NoConn ~ 5550 4950
 NoConn ~ 5550 4750
 NoConn ~ 5550 4450
 NoConn ~ 3850 3550
 NoConn ~ 3850 3650
-NoConn ~ 3850 3750
 NoConn ~ 3850 3950
 NoConn ~ 3850 4150
-NoConn ~ 3850 4450
 NoConn ~ 3850 4550
 NoConn ~ 3850 5450
 NoConn ~ 3850 5550
 NoConn ~ 3850 5750
 NoConn ~ 3850 5850
 NoConn ~ 3850 6050
-NoConn ~ 3850 6150
 NoConn ~ 3850 6250
 NoConn ~ 3850 2650
 NoConn ~ 3850 2850
@@ -1446,7 +1352,6 @@ NoConn ~ 5550 2350
 NoConn ~ 5550 2250
 NoConn ~ 5550 1850
 NoConn ~ 5550 1750
-NoConn ~ 5550 1350
 $Comp
 L Device:Crystal Y1
 U 1 1 6090A794
@@ -1735,4 +1640,36 @@ NoConn ~ 5550 3750
 NoConn ~ 5550 2850
 NoConn ~ 3850 4250
 NoConn ~ 5550 5250
+Wire Wire Line
+	5550 5350 6250 5350
+Wire Wire Line
+	5550 5450 6250 5450
+Wire Wire Line
+	5550 5550 6250 5550
+Wire Wire Line
+	5550 5750 6250 5750
+Wire Wire Line
+	5550 5850 6250 5850
+Wire Wire Line
+	5550 5950 6250 5950
+Wire Wire Line
+	5550 1350 6250 1350
+Text HLabel 6250 1350 2    50   Input ~ 0
+AIN_VA
+Wire Wire Line
+	5550 4950 6250 4950
+Text HLabel 6250 4950 2    50   Input ~ 0
+AIN_TEMP_B
+Wire Wire Line
+	3850 3750 3150 3750
+Text HLabel 3150 3750 0    50   Input ~ 0
+AIN_TEMP_C
+Wire Wire Line
+	3850 4450 3150 4450
+Text HLabel 3150 4450 0    50   Input ~ 0
+AIN_VB
+Wire Wire Line
+	3850 6150 3150 6150
+Text HLabel 3150 6150 0    50   Input ~ 0
+AIN_VC
 $EndSCHEMATC

@@ -34,7 +34,7 @@ F 3 "" H 5900 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 10300 3050 2    50   Output ~ 0
-Phase
+Phase+
 Text HLabel 1350 2750 0    50   Input ~ 0
 PwmH+
 $Comp
@@ -126,7 +126,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 2350 5900 1850
 Wire Wire Line
-	5900 3050 8950 3050
+	5900 3050 7150 3050
 Connection ~ 5900 3050
 Wire Wire Line
 	5900 3050 5900 2750
@@ -1047,4 +1047,223 @@ F 3 "" H 10000 3850 50  0001 C CNN
 	1    10000 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 607ABD1C
+P 7950 5300
+AR Path="/5D149BF5/607ABD1C" Ref="TH?"  Part="1" 
+AR Path="/607ABD1C" Ref="TH?"  Part="1" 
+AR Path="/5D1F70AC/607ABD1C" Ref="TH?"  Part="1" 
+AR Path="/5DB33F8E/607ABD1C" Ref="TH?"  Part="1" 
+AR Path="/5DB60C4A/607ABD1C" Ref="TH1"  Part="1" 
+AR Path="/5DB60C50/607ABD1C" Ref="TH2"  Part="1" 
+AR Path="/5DB60C56/607ABD1C" Ref="TH3"  Part="1" 
+F 0 "TH3" V 7900 5450 50  0000 L CNN
+F 1 "NTC 10k" V 8000 5400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7950 5350 50  0001 C CNN
+F 3 "~" H 7950 5350 50  0001 C CNN
+F 4 "C92367" V 8100 5550 50  0000 C CNN "LCSC#"
+	1    7950 5300
+	1    0    0    -1  
+$EndComp
+Text Notes 8250 5600 1    50   ~ 0
+Place near the FETs
+Wire Wire Line
+	7600 4500 7600 4800
+$Comp
+L power:GNDA #PWR?
+U 1 1 607ABD24
+P 7600 5500
+AR Path="/607ABD24" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60C4A/607ABD24" Ref="#PWR019"  Part="1" 
+AR Path="/5DB60C50/607ABD24" Ref="#PWR030"  Part="1" 
+AR Path="/5DB60C56/607ABD24" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 7600 5250 50  0001 C CNN
+F 1 "GNDA" H 7605 5327 50  0000 C CNN
+F 2 "" H 7600 5500 50  0001 C CNN
+F 3 "" H 7600 5500 50  0001 C CNN
+	1    7600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 607ABD2B
+P 7600 4350
+AR Path="/607ABD2B" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/607ABD2B" Ref="R67"  Part="1" 
+AR Path="/5DB60C50/607ABD2B" Ref="R70"  Part="1" 
+AR Path="/5DB60C56/607ABD2B" Ref="R73"  Part="1" 
+F 0 "R73" H 7670 4441 50  0000 L CNN
+F 1 "10k" H 7670 4350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7530 4350 50  0001 C CNN
+F 3 "~" H 7600 4350 50  0001 C CNN
+F 4 "C25804" H 7670 4259 50  0000 L CNN "LCSC#"
+	1    7600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 607ABD32
+P 7600 5150
+AR Path="/5D149BF5/5C7688B4/607ABD32" Ref="C?"  Part="1" 
+AR Path="/5D16DC99/607ABD32" Ref="C?"  Part="1" 
+AR Path="/5D1CB3B5/607ABD32" Ref="C?"  Part="1" 
+AR Path="/5D1F70AC/5D20B880/607ABD32" Ref="C?"  Part="1" 
+AR Path="/5DB60D99/5D20B880/607ABD32" Ref="C?"  Part="1" 
+AR Path="/601CB20C/5D20B880/607ABD32" Ref="C?"  Part="1" 
+AR Path="/607ABD32" Ref="C?"  Part="1" 
+AR Path="/5DB60C4A/607ABD32" Ref="C2"  Part="1" 
+AR Path="/5DB60C50/607ABD32" Ref="C93"  Part="1" 
+AR Path="/5DB60C56/607ABD32" Ref="C95"  Part="1" 
+F 0 "C95" V 7550 5200 50  0000 L CNN
+F 1 "100n" V 7650 5200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7638 5000 50  0001 C CNN
+F 3 "~" H 7600 5150 50  0001 C CNN
+F 4 "C14663" V 7750 5150 50  0000 C CNN "LCSC#"
+	1    7600 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4800 7600 5000
+Connection ~ 7600 4800
+$Comp
+L power:GNDA #PWR?
+U 1 1 607ABD40
+P 7150 5500
+AR Path="/607ABD40" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60C4A/607ABD40" Ref="#PWR013"  Part="1" 
+AR Path="/5DB60C50/607ABD40" Ref="#PWR028"  Part="1" 
+AR Path="/5DB60C56/607ABD40" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 7150 5250 50  0001 C CNN
+F 1 "GNDA" H 7155 5327 50  0000 C CNN
+F 2 "" H 7150 5500 50  0001 C CNN
+F 3 "" H 7150 5500 50  0001 C CNN
+	1    7150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 607ABD47
+P 6800 5200
+AR Path="/5D149BF5/5C7688B4/607ABD47" Ref="C?"  Part="1" 
+AR Path="/5D16DC99/607ABD47" Ref="C?"  Part="1" 
+AR Path="/5D1CB3B5/607ABD47" Ref="C?"  Part="1" 
+AR Path="/5D1F70AC/5D20B880/607ABD47" Ref="C?"  Part="1" 
+AR Path="/5DB60D99/5D20B880/607ABD47" Ref="C?"  Part="1" 
+AR Path="/601CB20C/5D20B880/607ABD47" Ref="C?"  Part="1" 
+AR Path="/607ABD47" Ref="C?"  Part="1" 
+AR Path="/5DB60C4A/607ABD47" Ref="C92"  Part="1" 
+AR Path="/5DB60C50/607ABD47" Ref="C94"  Part="1" 
+AR Path="/5DB60C56/607ABD47" Ref="C96"  Part="1" 
+F 0 "C96" V 6750 5250 50  0000 L CNN
+F 1 "100n" V 6850 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6838 5050 50  0001 C CNN
+F 3 "~" H 6800 5200 50  0001 C CNN
+F 4 "C14663" V 6950 5200 50  0000 C CNN "LCSC#"
+	1    6800 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5500 7150 5450
+Wire Wire Line
+	7150 5450 6800 5450
+Wire Wire Line
+	6800 5450 6800 5350
+Wire Wire Line
+	6800 5050 6800 4650
+$Comp
+L Device:R R?
+U 1 1 607ABD52
+P 7150 4350
+AR Path="/607ABD52" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/607ABD52" Ref="R3"  Part="1" 
+AR Path="/5DB60C50/607ABD52" Ref="R69"  Part="1" 
+AR Path="/5DB60C56/607ABD52" Ref="R72"  Part="1" 
+F 0 "R72" V 7150 4300 50  0000 L CNN
+F 1 "33k" V 7100 4500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7080 4350 50  0001 C CNN
+F 3 "~" H 7150 4350 50  0001 C CNN
+F 4 "C4216" V 7250 4250 50  0000 L CNN "LCSC#"
+	1    7150 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 607ABD59
+P 7150 5150
+AR Path="/607ABD59" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/607ABD59" Ref="R68"  Part="1" 
+AR Path="/5DB60C50/607ABD59" Ref="R71"  Part="1" 
+AR Path="/5DB60C56/607ABD59" Ref="R74"  Part="1" 
+F 0 "R74" V 7150 5100 50  0000 L CNN
+F 1 "1k" V 7100 5300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7080 5150 50  0001 C CNN
+F 3 "~" H 7150 5150 50  0001 C CNN
+F 4 "C21190" V 7250 5000 50  0000 L CNN "LCSC#"
+	1    7150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4650 7150 4650
+Wire Wire Line
+	7150 4650 7150 5000
+Wire Wire Line
+	7150 5300 7150 5450
+Connection ~ 7150 5450
+Wire Wire Line
+	7150 4500 7150 4650
+Connection ~ 7150 4650
+Wire Wire Line
+	7600 5300 7600 5500
+Wire Wire Line
+	7950 5150 7950 4800
+Wire Wire Line
+	7950 4800 7600 4800
+$Comp
+L power:GNDA #PWR?
+U 1 1 607ABD6C
+P 7950 5500
+AR Path="/607ABD6C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60C4A/607ABD6C" Ref="#PWR021"  Part="1" 
+AR Path="/5DB60C50/607ABD6C" Ref="#PWR037"  Part="1" 
+AR Path="/5DB60C56/607ABD6C" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 7950 5250 50  0001 C CNN
+F 1 "GNDA" H 7955 5327 50  0000 C CNN
+F 2 "" H 7950 5500 50  0001 C CNN
+F 3 "" H 7950 5500 50  0001 C CNN
+	1    7950 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5450 7950 5500
+Wire Wire Line
+	7150 3050 7150 4200
+Connection ~ 7150 3050
+Wire Wire Line
+	7150 3050 8950 3050
+Wire Wire Line
+	7600 4200 7600 4000
+Wire Wire Line
+	7600 4000 7750 4000
+Text HLabel 7750 4000 2    50   Input ~ 0
+VREF
+Wire Wire Line
+	7150 4650 8850 4650
+Wire Wire Line
+	8850 4650 8850 5900
+Wire Wire Line
+	8850 5900 10650 5900
+Wire Wire Line
+	7950 4800 8700 4800
+Wire Wire Line
+	8700 4800 8700 6050
+Wire Wire Line
+	8700 6050 10650 6050
+Connection ~ 7950 4800
+Text HLabel 10650 5900 2    50   Output ~ 0
+V
+Text HLabel 10650 6050 2    50   Output ~ 0
+T
+Text Label 8350 3050 0    50   ~ 0
+Phase-
 $EndSCHEMATC
