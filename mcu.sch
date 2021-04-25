@@ -234,11 +234,12 @@ F 4 "C15850" V 1850 7100 50  0000 C CNN "LCSC#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Mini J?
+L hardware_4850-rescue:USB_B_Mini-Connector J?
 U 1 1 60656DEE
 P 10500 2550
 AR Path="/601CB20C/60656DEE" Ref="J?"  Part="1" 
 AR Path="/6061BA5E/60656DEE" Ref="J13"  Part="1" 
+AR Path="/60656DEE" Ref="J13"  Part="1" 
 F 0 "J13" H 10270 2539 50  0000 R CNN
 F 1 "Debug" H 10270 2448 50  0000 R CNN
 F 2 "Connector_USB:USB_Micro-B_Wuerth_614105150721_Vertical" H 10650 2500 50  0001 C CNN
