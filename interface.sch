@@ -733,51 +733,6 @@ Wire Wire Line
 Connection ~ 8850 1850
 Wire Wire Line
 	8850 1850 8850 2100
-Wire Wire Line
-	7650 3450 7850 3450
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 606C4644
-P 10200 2300
-AR Path="/606C4644" Ref="JP?"  Part="1" 
-AR Path="/606501D4/606C4644" Ref="JP14"  Part="1" 
-F 0 "JP14" H 10350 2350 50  0000 C CNN
-F 1 "CAN_TX" H 10200 2450 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 10200 2300 50  0001 C CNN
-F 3 "~" H 10200 2300 50  0001 C CNN
-	1    10200 2300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 606C464A
-P 10200 2400
-AR Path="/606C464A" Ref="JP?"  Part="1" 
-AR Path="/606501D4/606C464A" Ref="JP15"  Part="1" 
-F 0 "JP15" H 10350 2450 50  0000 C CNN
-F 1 "CAN_RX" H 10200 2350 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 10200 2400 50  0001 C CNN
-F 3 "~" H 10200 2400 50  0001 C CNN
-	1    10200 2400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 606C4650
-P 7550 3450
-AR Path="/606C4650" Ref="JP?"  Part="1" 
-AR Path="/606501D4/606C4650" Ref="JP16"  Part="1" 
-F 0 "JP16" H 7700 3500 50  0000 C CNN
-F 1 "CAN_GND" H 7550 3400 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 7550 3450 50  0001 C CNN
-F 3 "~" H 7550 3450 50  0001 C CNN
-	1    7550 3450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 2300 10700 2300
-Wire Wire Line
-	10300 2400 10700 2400
 $Comp
 L Device:R R?
 U 1 1 606CA1C5
@@ -850,8 +805,6 @@ Wire Wire Line
 	7300 2400 7150 2400
 Connection ~ 7300 2400
 Wire Wire Line
-	7150 3450 7450 3450
-Wire Wire Line
 	7850 3250 7850 3450
 Connection ~ 7850 3450
 Wire Wire Line
@@ -878,10 +831,6 @@ F 4 "C12084" H 8850 2400 50  0001 C CNN "LCSC#"
 	1    8850 2400
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9250 2300 10100 2300
-Wire Wire Line
-	9250 2400 10100 2400
 NoConn ~ 9250 2500
 $Comp
 L Device:R R?
@@ -933,4 +882,28 @@ F 3 "" H 2550 5100 50  0001 C CNN
 	1    2550 5100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9250 2300 10700 2300
+Wire Wire Line
+	9250 2400 10700 2400
+Wire Wire Line
+	7150 3450 7350 3450
+$Comp
+L Device:R R?
+U 1 1 608AEA10
+P 7500 3450
+AR Path="/5DB60C4A/608AEA10" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/608AEA10" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/608AEA10" Ref="R?"  Part="1" 
+AR Path="/606501D4/608AEA10" Ref="R701"  Part="1" 
+F 0 "R701" V 7500 3450 50  0000 C CNN
+F 1 "1R" V 7450 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 3450 50  0001 C CNN
+F 3 "~" H 7500 3450 50  0001 C CNN
+F 4 "C22936" V 7550 3700 50  0000 C CNN "LCSC#"
+	1    7500 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 3450 7850 3450
 $EndSCHEMATC
