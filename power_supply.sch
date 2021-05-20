@@ -1084,9 +1084,9 @@ Connection ~ 1100 3200
 Wire Wire Line
 	1750 3200 2350 3200
 Wire Wire Line
-	2350 1200 2100 1200
+	2350 1200 1100 1200
 Connection ~ 2350 1200
-Text HLabel 2100 1200 0    50   Input ~ 0
+Text HLabel 1100 1200 0    50   Input ~ 0
 DCDC_VIN
 $Comp
 L power:PWR_FLAG #FLG0110

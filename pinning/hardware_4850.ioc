@@ -480,4 +480,3 @@ PE0.Mode=Asynchronous
 ProjectManager.LibraryCopy=1
 PA7.Signal=SharedAnalog_PA7
 PA6.Locked=true
-isbadioc=true
