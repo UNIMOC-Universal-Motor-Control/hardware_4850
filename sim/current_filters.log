@@ -1,0 +1,79 @@
+Circuit: * C:\Work\unimoc\hardware_4850\sim\current_filters.asc
+
+WARNING: Less than two connections to node NC_09.  This node is used by R47.
+WARNING: Less than two connections to node NC_10.  This node is used by R49.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 5.7896e-008
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(set_bw:1)
+Ignoring empty pin current: Ix(set_bw:2)
+Ignoring empty pin current: Ix(set_bw:3)
+Ignoring empty pin current: Ix(buffer:1)
+Ignoring empty pin current: Ix(buffer:2)
+Ignoring empty pin current: Ix(buffer:3)
+Ignoring empty pin current: Ix(buffer:4)
+Ignoring empty pin current: Ix(buffer:5)
+Ignoring empty pin current: Ix(u2:viout)
+Ignoring empty pin current: Ix(u3:viout)
+Ignoring empty pin current: Ix(u4:viout)
+Ignoring empty pin current: Ix(set_bw:1)
+Ignoring empty pin current: Ix(set_bw:2)
+Ignoring empty pin current: Ix(set_bw:3)
+Ignoring empty pin current: Ix(buffer:1)
+Ignoring empty pin current: Ix(buffer:2)
+Ignoring empty pin current: Ix(buffer:3)
+Ignoring empty pin current: Ix(buffer:4)
+Ignoring empty pin current: Ix(buffer:5)
+Ignoring empty pin current: Ix(u2:viout)
+Ignoring empty pin current: Ix(u3:viout)
+Ignoring empty pin current: Ix(u4:viout)
+
+Date: Fri May 21 15:42:22 2021
+Total elapsed time: 5.286 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 13463
+traniter = 11577
+tranpoints = 5505
+accept = 4383
+rejected = 1122
+matrix size = 280
+fillins = 1858
+solver = Normal
+Thread vector: 110.7/68.7[8] 50.2/27.8[8] 401.3/14.1[8] 1.6/8.7[1]  2592/500
+Matrix Compiler1: 284.61 KB object code size  77.6/44.8/[23.2]
+Matrix Compiler2: 57.87 KB object code size  9.9/9.1/[2.9]
+
