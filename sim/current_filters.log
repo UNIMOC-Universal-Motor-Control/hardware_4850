@@ -1,7 +1,5 @@
-Circuit: * C:\Work\unimoc\hardware_4850\sim\current_filters.asc
+Circuit: * D:\Elektronik\Projekte\unimoc\hardware_4850\sim\current_filters.asc
 
-WARNING: Less than two connections to node NC_09.  This node is used by R47.
-WARNING: Less than two connections to node NC_10.  This node is used by R49.
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -31,11 +29,122 @@ Gmin stepping failed
 
 Starting source stepping with srcstepmethod=0
 Source Step = 3.0303%
+Source Step = 15.9091%
+Source Step = 16.1162%
+Source Step = 16.1458%
+Source Step = 16.1754%
+Source Step = 16.205%
+Source Step = 16.2346%
+vernier = 0.00146484
+Source Step = 16.2701%
+Source Step = 16.3145%
+Source Step = 16.3589%
+Source Step = 16.4033%
+Source Step = 16.4477%
+vernier = 0.00219727
+Source Step = 16.4987%
+Source Step = 16.5653%
+Source Step = 16.6319%
+Source Step = 16.6985%
+Source Step = 16.7651%
+vernier = 0.0032959
+Source Step = 16.8383%
+Source Step = 16.9382%
+Source Step = 17.0381%
+Source Step = 17.1379%
+Source Step = 17.2378%
+vernier = 0.00494385
+Source Step = 17.3427%
+Source Step = 17.4925%
+Source Step = 17.6423%
+Source Step = 17.7921%
+Source Step = 17.9419%
+Source Step = 18.0917%
+vernier = 0.00741577
+Source Step = 18.3165%
+Source Step = 18.5412%
+Source Step = 18.7659%
+Source Step = 18.9906%
+Source Step = 19.2153%
+vernier = 0.0111237
+Source Step = 19.5412%
+Source Step = 19.8783%
+Source Step = 20.2154%
+Source Step = 20.5524%
+Source Step = 20.8895%
+vernier = 0.0166855
+Source Step = 21.3614%
+Source Step = 21.867%
+Source Step = 22.3727%
+Source Step = 22.8783%
+Source Step = 23.3839%
+vernier = 0.0250282
+Source Step = 24.0665%
+Source Step = 24.8249%
+Source Step = 25.5834%
+Source Step = 26.3418%
+Source Step = 27.1002%
+vernier = 0.0375423
+Source Step = 28.0862%
+Source Step = 29.2238%
+Source Step = 30.3615%
+Source Step = 31.4991%
+Source Step = 32.6368%
+vernier = 0.0563135
+Source Step = 34.0588%
+Source Step = 35.7653%
+Source Step = 37.4718%
+Source Step = 39.1782%
+Source Step = 40.8847%
+vernier = 0.0844703
+Source Step = 42.9325%
+Source Step = 45.4922%
+Source Step = 48.0519%
+Source Step = 50.6116%
+Source Step = 53.1713%
+vernier = 0.126705
+Source Step = 56.115%
+Source Step = 59.9545%
+Source Step = 63.7941%
+Source Step = 67.6336%
+Source Step = 71.4732%
+vernier = 0.190058
+Source Step = 75.6967%
+Source Step = 81.456%
+Source Step = 87.2154%
+Source Step = 90.113%
+Source Step = 90.203%
+Source Step = 90.293%
+Source Step = 90.383%
+Source Step = 90.473%
+Source Step = 90.563%
+Source Step = 90.653%
+Source Step = 90.743%
+Source Step = 90.833%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
 Source Step = 33.3333%
 Source Step = 63.6364%
 Source Step = 93.9394%
-Source stepping succeeded in finding the operating point.
+Source Step = 100%
+Source Step = 99.7576%
+vernier = 0.0625
+Source Step = 99.0207%
+Source Step = 99.0503%
+Source Step = 99.0799%
+Source Step = 99.1095%
+Source Step = 99.1391%
+Source Step = 99.1687%
+Source Step = 99.1983%
+Source Step = 99.2279%
+Source Step = 99.2575%
+Source Step = 99.2871%
+Source Step = 99.3166%
+Source Step = 99.3462%
+Source Step = 99.3758%
+Source stepping failed
 
+Pseudo Transient succeeded in finding the operating point at 3.59231 s.
 Ignoring empty pin current: Ix(set_bw:1)
 Ignoring empty pin current: Ix(set_bw:2)
 Ignoring empty pin current: Ix(set_bw:3)
@@ -59,21 +168,21 @@ Ignoring empty pin current: Ix(u2:viout)
 Ignoring empty pin current: Ix(u3:viout)
 Ignoring empty pin current: Ix(u4:viout)
 
-Date: Fri May 21 15:42:22 2021
-Total elapsed time: 5.286 seconds.
+Date: Fri May 21 23:30:04 2021
+Total elapsed time: 73.106 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 13463
-traniter = 11577
-tranpoints = 5505
-accept = 4383
-rejected = 1122
-matrix size = 280
-fillins = 1858
+totiter = 85183
+traniter = 44855
+tranpoints = 22232
+accept = 16024
+rejected = 6323
+matrix size = 357
+fillins = 2891
 solver = Normal
-Thread vector: 110.7/68.7[8] 50.2/27.8[8] 401.3/14.1[8] 1.6/8.7[1]  2592/500
-Matrix Compiler1: 284.61 KB object code size  77.6/44.8/[23.2]
-Matrix Compiler2: 57.87 KB object code size  9.9/9.1/[2.9]
+Thread vector: 114.8/33.6[4] 26.1/14.0[4] 11.5/6.8[4] 2.2/2.2[2]  2592/500
+Matrix Compiler1: 563.00 KB object code size  104.6/49.6/[25.9]
+Matrix Compiler2: 83.02 KB object code size  6.4/6.1/[2.6]
 
