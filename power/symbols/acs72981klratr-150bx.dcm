@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ACS72981KLATR-150B5
+D ±150A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 13,33mV/A, PSOF-7
+K hall effect current monitor sensor isolated
+F ${KIPRJMOD}/datasheets/ACS72981-Datasheet.pdf
+$ENDCMP
+#
+#End Doc Library

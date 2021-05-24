@@ -1,0 +1,365 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "UNIMOC Hardware 4850"
+Date "2021-03-28"
+Rev "2"
+Comp "Thunderdrive GmbH"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Autor: Alexander Evers <tecnologic86@gmail.com>"
+$EndDescr
+$Sheet
+S 9450 1200 950  1100
+U 5DB60C4A
+F0 "phase_a" 50
+F1 "phase.sch" 50
+F2 "PwmH+" I L 9450 1300 50 
+F3 "PwmH-" I L 9450 1400 50 
+F4 "PwmL+" I L 9450 1600 50 
+F5 "PwmL-" I L 9450 1700 50 
+F6 "I" O L 9450 2000 50 
+F7 "VREF" I L 9450 1900 50 
+F8 "V" O L 9450 2100 50 
+F9 "T" O L 9450 2200 50 
+F10 "Phase+" O R 10400 1300 50 
+$EndSheet
+$Sheet
+S 9450 2500 950  1100
+U 5DB60C50
+F0 "phase_b" 50
+F1 "phase.sch" 50
+F2 "I" O L 9450 3300 50 
+F3 "PwmH+" I L 9450 2600 50 
+F4 "VREF" I L 9450 3200 50 
+F5 "PwmH-" I L 9450 2700 50 
+F6 "PwmL+" I L 9450 2900 50 
+F7 "PwmL-" I L 9450 3000 50 
+F8 "V" O L 9450 3400 50 
+F9 "T" O L 9450 3500 50 
+F10 "Phase+" O R 10400 2600 50 
+$EndSheet
+$Sheet
+S 9450 3800 950  1100
+U 5DB60C56
+F0 "phase_c" 50
+F1 "phase.sch" 50
+F2 "I" O L 9450 4600 50 
+F3 "PwmH+" I L 9450 3900 50 
+F4 "VREF" I L 9450 4500 50 
+F5 "PwmH-" I L 9450 4000 50 
+F6 "PwmL+" I L 9450 4200 50 
+F7 "PwmL-" I L 9450 4300 50 
+F8 "V" O L 9450 4700 50 
+F9 "T" O L 9450 4800 50 
+F10 "Phase+" O R 10400 3900 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5DB60C5C
+P 10900 1300
+AR Path="/5DB33F8E/5DB60C5C" Ref="J?"  Part="1" 
+AR Path="/5DB60C5C" Ref="J3"  Part="1" 
+F 0 "J3" H 10980 1342 50  0000 L CNN
+F 1 "A" H 10980 1251 50  0000 L CNN
+F 2 "footprints:8X8X8.4MM TERMINAL" H 10900 1300 50  0001 C CNN
+F 3 "~" H 10900 1300 50  0001 C CNN
+	1    10900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5DB60C62
+P 10900 950
+AR Path="/5DB33F8E/5DB60C62" Ref="J?"  Part="1" 
+AR Path="/5DB60C62" Ref="J1"  Part="1" 
+F 0 "J1" H 10980 992 50  0000 L CNN
+F 1 "+" H 10980 901 50  0000 L CNN
+F 2 "footprints:8X8X8.4MM TERMINAL" H 10900 950 50  0001 C CNN
+F 3 "~" H 10900 950 50  0001 C CNN
+	1    10900 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5DB60C68
+P 10900 2600
+AR Path="/5DB33F8E/5DB60C68" Ref="J?"  Part="1" 
+AR Path="/5DB60C68" Ref="J5"  Part="1" 
+F 0 "J5" H 10980 2642 50  0000 L CNN
+F 1 "B" H 10980 2551 50  0000 L CNN
+F 2 "footprints:8X8X8.4MM TERMINAL" H 10900 2600 50  0001 C CNN
+F 3 "~" H 10900 2600 50  0001 C CNN
+	1    10900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5DB60C6E
+P 10900 3900
+AR Path="/5DB33F8E/5DB60C6E" Ref="J?"  Part="1" 
+AR Path="/5DB60C6E" Ref="J7"  Part="1" 
+F 0 "J7" H 10980 3942 50  0000 L CNN
+F 1 "C" H 10980 3851 50  0000 L CNN
+F 2 "footprints:8X8X8.4MM TERMINAL" H 10900 3900 50  0001 C CNN
+F 3 "~" H 10900 3900 50  0001 C CNN
+	1    10900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5DB60C74
+P 10900 4350
+AR Path="/5DB33F8E/5DB60C74" Ref="J?"  Part="1" 
+AR Path="/5DB60C74" Ref="J8"  Part="1" 
+F 0 "J8" H 10980 4392 50  0000 L CNN
+F 1 "GND" H 10980 4301 50  0000 L CNN
+F 2 "footprints:8X8X8.4MM TERMINAL" H 10900 4350 50  0001 C CNN
+F 3 "~" H 10900 4350 50  0001 C CNN
+	1    10900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 950  10500 950 
+Wire Wire Line
+	10500 950  10500 800 
+Wire Wire Line
+	10700 2600 10400 2600
+Wire Wire Line
+	10700 3900 10400 3900
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5DB60C7F
+P 10650 4600
+AR Path="/5DB33F8E/5DB60C7F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB60C7F" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 10650 4400 50  0001 C CNN
+F 1 "GNDPWR" H 10654 4446 50  0000 C CNN
+F 2 "" H 10650 4550 50  0001 C CNN
+F 3 "" H 10650 4550 50  0001 C CNN
+	1    10650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 4350 10650 4350
+Wire Wire Line
+	10650 4350 10650 4600
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DB60D20
+P 10050 800
+AR Path="/5DB33F8E/5DB60D20" Ref="#FLG?"  Part="1" 
+AR Path="/5DB60D20" Ref="#FLG01"  Part="1" 
+F 0 "#FLG01" H 10050 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 10050 973 50  0000 C CNN
+F 2 "" H 10050 800 50  0001 C CNN
+F 3 "~" H 10050 800 50  0001 C CNN
+	1    10050 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 950  10050 950 
+Wire Wire Line
+	10050 950  10050 800 
+Connection ~ 10500 950 
+$Comp
+L power:+BATT #PWR01
+U 1 1 609DDE56
+P 10500 800
+F 0 "#PWR01" H 10500 650 50  0001 C CNN
+F 1 "+BATT" H 10515 973 50  0000 C CNN
+F 2 "" H 10500 800 50  0001 C CNN
+F 3 "" H 10500 800 50  0001 C CNN
+	1    10500 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Housing_Pad N1
+U 1 1 6064EF7E
+P 6150 7000
+F 0 "N1" H 6303 7034 50  0000 L CNN
+F 1 "Housing" H 6303 6943 50  0000 L CNN
+F 2 "footprints:RND-455-00370" H 6200 7050 50  0001 C CNN
+F 3 "~" H 6200 7050 50  0001 C CNN
+	1    6150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 6073EA2A
+P 5950 7450
+AR Path="/5DB33F8E/6073EA2A" Ref="#PWR?"  Part="1" 
+AR Path="/6073EA2A" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 5950 7250 50  0001 C CNN
+F 1 "GNDPWR" H 5954 7296 50  0000 C CNN
+F 2 "" H 5950 7400 50  0001 C CNN
+F 3 "" H 5950 7400 50  0001 C CNN
+	1    5950 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 7200 5950 7350
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 60792ACC
+P 5100 7050
+F 0 "H3" H 5200 7099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5200 7008 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5100 7050 50  0001 C CNN
+F 3 "~" H 5100 7050 50  0001 C CNN
+	1    5100 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 60793420
+P 4150 7050
+F 0 "H2" H 4250 7099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4250 7008 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4150 7050 50  0001 C CNN
+F 3 "~" H 4150 7050 50  0001 C CNN
+	1    4150 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 7350 5100 7350
+Wire Wire Line
+	5100 7350 5100 7150
+Connection ~ 5950 7350
+Wire Wire Line
+	5950 7350 5950 7450
+Wire Wire Line
+	5100 7350 4150 7350
+Wire Wire Line
+	4150 7350 4150 7150
+Connection ~ 5100 7350
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6079EEBC
+P 3250 7050
+F 0 "H1" H 3350 7099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3350 7008 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3250 7050 50  0001 C CNN
+F 3 "~" H 3250 7050 50  0001 C CNN
+	1    3250 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 7350 3250 7350
+Wire Wire Line
+	3250 7350 3250 7150
+Connection ~ 4150 7350
+$Comp
+L power:+BATT #PWR011
+U 1 1 607FFF78
+P 10950 5000
+F 0 "#PWR011" H 10950 4850 50  0001 C CNN
+F 1 "+BATT" H 10965 5173 50  0000 C CNN
+F 2 "" H 10950 5000 50  0001 C CNN
+F 3 "" H 10950 5000 50  0001 C CNN
+	1    10950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR012
+U 1 1 607FFF7E
+P 10950 6200
+F 0 "#PWR012" H 10950 5950 50  0001 C CNN
+F 1 "GNDA" H 10955 6027 50  0000 C CNN
+F 2 "" H 10950 6200 50  0001 C CNN
+F 3 "" H 10950 6200 50  0001 C CNN
+	1    10950 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 607FFF85
+P 10600 5900
+AR Path="/5D149BF5/5C7688B4/607FFF85" Ref="C?"  Part="1" 
+AR Path="/5D16DC99/607FFF85" Ref="C?"  Part="1" 
+AR Path="/5D1CB3B5/607FFF85" Ref="C?"  Part="1" 
+AR Path="/5D1F70AC/5D20B880/607FFF85" Ref="C?"  Part="1" 
+AR Path="/5DB60D99/5D20B880/607FFF85" Ref="C?"  Part="1" 
+AR Path="/601CB20C/5D20B880/607FFF85" Ref="C?"  Part="1" 
+AR Path="/607FFF85" Ref="C1"  Part="1" 
+F 0 "C1" V 10550 5950 50  0000 L CNN
+F 1 "100n" V 10650 5950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10638 5750 50  0001 C CNN
+F 3 "~" H 10600 5900 50  0001 C CNN
+F 4 "C14663" V 10750 5900 50  0000 C CNN "LCSC#"
+	1    10600 5900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 6200 10950 6150
+Wire Wire Line
+	10950 6150 10600 6150
+Wire Wire Line
+	10600 6150 10600 6050
+Wire Wire Line
+	10600 5750 10600 5550
+$Comp
+L Device:R R1
+U 1 1 607FFF90
+P 10950 5300
+F 0 "R1" V 10950 5250 50  0000 L CNN
+F 1 "33k" V 10900 5450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10880 5300 50  0001 C CNN
+F 3 "~" H 10950 5300 50  0001 C CNN
+F 4 "C4216" V 11050 5200 50  0000 L CNN "LCSC#"
+	1    10950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 607FFF97
+P 10950 5850
+F 0 "R2" V 10950 5800 50  0000 L CNN
+F 1 "1k" V 10900 6000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10880 5850 50  0001 C CNN
+F 3 "~" H 10950 5850 50  0001 C CNN
+F 4 "C21190" V 11050 5700 50  0000 L CNN "LCSC#"
+	1    10950 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 5550 10950 5550
+Wire Wire Line
+	10950 5550 10950 5700
+Wire Wire Line
+	10950 6000 10950 6150
+Connection ~ 10950 6150
+Wire Wire Line
+	10950 5450 10950 5550
+Connection ~ 10950 5550
+Wire Wire Line
+	10950 5150 10950 5000
+Wire Wire Line
+	7850 5550 10600 5550
+Connection ~ 10600 5550
+Wire Wire Line
+	9450 3200 9250 3200
+Wire Wire Line
+	9250 3200 9250 1900
+Wire Wire Line
+	9250 1900 9450 1900
+Wire Wire Line
+	9450 4500 9250 4500
+Wire Wire Line
+	9250 4500 9250 3200
+Connection ~ 9250 3200
+Wire Wire Line
+	9250 6400 9250 5850
+Connection ~ 9250 4500
+Wire Wire Line
+	9250 5850 7850 5850
+Connection ~ 9250 5850
+Wire Wire Line
+	9250 5850 9250 4500
+Wire Wire Line
+	10700 1300 10400 1300
+$EndSCHEMATC

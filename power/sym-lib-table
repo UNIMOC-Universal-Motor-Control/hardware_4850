@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name power_4850-rescue)(type Legacy)(uri ${KIPRJMOD}/power_4850-rescue.lib)(options "")(descr ""))
+  (lib (name acs72981klratr-150bx)(type Legacy)(uri ${KIPRJMOD}/symbols/acs72981klratr-150bx.lib)(options "")(descr ""))
+)
