@@ -33,7 +33,7 @@ F 3 "" H 5650 6350 50  0001 C CNN
 	1    5650 6400
 	1    0    0    -1  
 $EndComp
-Text HLabel 10550 5750 2    50   Output ~ 0
+Text HLabel 10550 6000 2    50   Output ~ 0
 Phase-
 Text HLabel 1350 2750 0    50   Input ~ 0
 PwmL
@@ -838,7 +838,7 @@ Connection ~ 2850 3350
 $Comp
 L Device:Thermistor_NTC TH?
 U 1 1 607ABD1C
-P 7650 5300
+P 6100 6200
 AR Path="/5D149BF5/607ABD1C" Ref="TH?"  Part="1" 
 AR Path="/607ABD1C" Ref="TH?"  Part="1" 
 AR Path="/5D1F70AC/607ABD1C" Ref="TH?"  Part="1" 
@@ -846,89 +846,16 @@ AR Path="/5DB33F8E/607ABD1C" Ref="TH?"  Part="1"
 AR Path="/5DB60C4A/607ABD1C" Ref="TH1"  Part="1" 
 AR Path="/5DB60C50/607ABD1C" Ref="TH2"  Part="1" 
 AR Path="/5DB60C56/607ABD1C" Ref="TH3"  Part="1" 
-F 0 "TH1" V 7600 5450 50  0000 L CNN
-F 1 "NTC 10k" V 7700 5400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7650 5350 50  0001 C CNN
-F 3 "~" H 7650 5350 50  0001 C CNN
-F 4 "C92367" V 7800 5550 50  0000 C CNN "LCSC#"
-	1    7650 5300
+F 0 "TH1" V 6050 6350 50  0000 L CNN
+F 1 "NTC 10k" V 6150 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6100 6250 50  0001 C CNN
+F 3 "~" H 6100 6250 50  0001 C CNN
+F 4 "C92367" V 6250 6450 50  0000 C CNN "LCSC#"
+	1    6100 6200
 	1    0    0    -1  
 $EndComp
-Text Notes 7950 5600 1    50   ~ 0
+Text Notes 6400 6500 1    50   ~ 0
 Place near the FETs
-Wire Wire Line
-	7300 4500 7300 4800
-$Comp
-L power:GNDA #PWR?
-U 1 1 607ABD24
-P 7300 5500
-AR Path="/607ABD24" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60C4A/607ABD24" Ref="#PWR019"  Part="1" 
-AR Path="/5DB60C50/607ABD24" Ref="#PWR030"  Part="1" 
-AR Path="/5DB60C56/607ABD24" Ref="#PWR068"  Part="1" 
-F 0 "#PWR019" H 7300 5250 50  0001 C CNN
-F 1 "GNDA" H 7305 5327 50  0000 C CNN
-F 2 "" H 7300 5500 50  0001 C CNN
-F 3 "" H 7300 5500 50  0001 C CNN
-	1    7300 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 607ABD2B
-P 7300 4350
-AR Path="/607ABD2B" Ref="R?"  Part="1" 
-AR Path="/5DB60C4A/607ABD2B" Ref="R67"  Part="1" 
-AR Path="/5DB60C50/607ABD2B" Ref="R70"  Part="1" 
-AR Path="/5DB60C56/607ABD2B" Ref="R73"  Part="1" 
-F 0 "R67" H 7370 4441 50  0000 L CNN
-F 1 "10k" H 7370 4350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7230 4350 50  0001 C CNN
-F 3 "~" H 7300 4350 50  0001 C CNN
-F 4 "C25804" H 7370 4259 50  0000 L CNN "LCSC#"
-	1    7300 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 607ABD32
-P 7300 5150
-AR Path="/5D149BF5/5C7688B4/607ABD32" Ref="C?"  Part="1" 
-AR Path="/5D16DC99/607ABD32" Ref="C?"  Part="1" 
-AR Path="/5D1CB3B5/607ABD32" Ref="C?"  Part="1" 
-AR Path="/5D1F70AC/5D20B880/607ABD32" Ref="C?"  Part="1" 
-AR Path="/5DB60D99/5D20B880/607ABD32" Ref="C?"  Part="1" 
-AR Path="/601CB20C/5D20B880/607ABD32" Ref="C?"  Part="1" 
-AR Path="/607ABD32" Ref="C?"  Part="1" 
-AR Path="/5DB60C4A/607ABD32" Ref="C2"  Part="1" 
-AR Path="/5DB60C50/607ABD32" Ref="C93"  Part="1" 
-AR Path="/5DB60C56/607ABD32" Ref="C95"  Part="1" 
-F 0 "C2" V 7250 5200 50  0000 L CNN
-F 1 "100n" V 7350 5200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7338 5000 50  0001 C CNN
-F 3 "~" H 7300 5150 50  0001 C CNN
-F 4 "C14663" V 7450 5150 50  0000 C CNN "LCSC#"
-	1    7300 5150
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 4800 7300 5000
-Connection ~ 7300 4800
-$Comp
-L power:GNDA #PWR?
-U 1 1 607ABD40
-P 6850 5500
-AR Path="/607ABD40" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60C4A/607ABD40" Ref="#PWR013"  Part="1" 
-AR Path="/5DB60C50/607ABD40" Ref="#PWR028"  Part="1" 
-AR Path="/5DB60C56/607ABD40" Ref="#PWR039"  Part="1" 
-F 0 "#PWR013" H 6850 5250 50  0001 C CNN
-F 1 "GNDA" H 6855 5327 50  0000 C CNN
-F 2 "" H 6850 5500 50  0001 C CNN
-F 3 "" H 6850 5500 50  0001 C CNN
-	1    6850 5500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 607ABD47
@@ -951,8 +878,6 @@ F 4 "C14663" V 6650 5200 50  0000 C CNN "LCSC#"
 	1    6500 5200
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6850 5500 6850 5450
 Wire Wire Line
 	6850 5450 6500 5450
 Wire Wire Line
@@ -1002,55 +927,19 @@ Wire Wire Line
 	6850 4500 6850 4650
 Connection ~ 6850 4650
 Wire Wire Line
-	7300 5300 7300 5500
-Wire Wire Line
-	7650 5150 7650 4800
-Wire Wire Line
-	7650 4800 7300 4800
-$Comp
-L power:GNDA #PWR?
-U 1 1 607ABD6C
-P 7650 5500
-AR Path="/607ABD6C" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60C4A/607ABD6C" Ref="#PWR021"  Part="1" 
-AR Path="/5DB60C50/607ABD6C" Ref="#PWR037"  Part="1" 
-AR Path="/5DB60C56/607ABD6C" Ref="#PWR073"  Part="1" 
-F 0 "#PWR021" H 7650 5250 50  0001 C CNN
-F 1 "GNDA" H 7655 5327 50  0000 C CNN
-F 2 "" H 7650 5500 50  0001 C CNN
-F 3 "" H 7650 5500 50  0001 C CNN
-	1    7650 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 5450 7650 5500
-Wire Wire Line
 	6850 3050 6850 4200
 Connection ~ 6850 3050
 Wire Wire Line
-	7300 4200 7300 4000
+	6850 4650 7100 4650
 Wire Wire Line
-	7300 4000 7450 4000
-Text HLabel 7450 4000 2    50   Input ~ 0
-VREF
+	7100 4650 7100 6100
 Wire Wire Line
-	6850 4650 8150 4650
-Wire Wire Line
-	8150 4650 8150 5900
-Wire Wire Line
-	8150 5900 10550 5900
-Wire Wire Line
-	7650 4800 8000 4800
-Wire Wire Line
-	8000 4800 8000 6050
-Wire Wire Line
-	8000 6050 10550 6050
-Connection ~ 7650 4800
-Text HLabel 10550 5900 2    50   Output ~ 0
+	7100 6100 10550 6100
+Text HLabel 10550 6100 2    50   Output ~ 0
 V
-Text HLabel 10550 6050 2    50   Output ~ 0
-T
-Text Label 8050 3050 0    50   ~ 0
+Text HLabel 10550 6300 2    50   Output ~ 0
+T+
+Text Label 7250 3050 0    50   ~ 0
 Phase+
 $Comp
 L Device:C C211
@@ -1543,19 +1432,19 @@ Connection ~ 10700 1450
 $Comp
 L acs72981klratr-150bx:ACS72981KLATR-150B5 U?
 U 1 1 60AFE0B5
-P 8750 3650
+P 7700 4100
 AR Path="/5DB60C4A/60AFE0B5" Ref="U?"  Part="1" 
 AR Path="/5DB60C50/60AFE0B5" Ref="U?"  Part="1" 
 AR Path="/5DB60C56/60AFE0B5" Ref="U?"  Part="1" 
-F 0 "U?" H 8450 3400 50  0000 L CNN
-F 1 "ACS72981KLATR-150B5" V 8250 3200 50  0000 L CNN
-F 2 "Sensor_Current:Allegro_PSOF-7_4.8x6.4mm_P1.60mm" H 8750 3650 50  0001 C CNN
-F 3 "${KIPRJMOD}/datasheets/ACS72981-Datasheet.pdf" H 8750 3650 50  0001 C CNN
-	1    8750 3650
+F 0 "U?" H 7400 3850 50  0000 L CNN
+F 1 "ACS72981KLATR-150B5" V 7200 3650 50  0000 L CNN
+F 2 "Sensor_Current:Allegro_PSOF-7_4.8x6.4mm_P1.60mm" H 7700 4100 50  0001 C CNN
+F 3 "${KIPRJMOD}/datasheets/ACS72981-Datasheet.pdf" H 7700 4100 50  0001 C CNN
+	1    7700 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 3050 8300 3050
+	6850 3050 7250 3050
 Text HLabel 1350 5400 0    50   Input ~ 0
 PwmH
 Text HLabel 1350 5200 0    50   Input ~ 0
@@ -1597,48 +1486,30 @@ $EndComp
 Text Notes 900  3800 0    50   ~ 0
 VDD cannot be used directly as the driver supply. But due\nto the high frequency of vLS (> 100 MHz), a filter composed of impedance ZVDD together with the blocking cap\nCVDD is well suited to generate a sufficiently stable driver supply. ZVDD can be either a resistor (e.g. 22 Ω with a\ntypical CVDD of 1 µF) or, even better, a proper ferrite bead.
 Wire Wire Line
-	8300 5750 8300 3750
+	7250 6000 7250 4200
 Wire Wire Line
-	8300 3750 8350 3750
+	7250 4200 7300 4200
 Wire Wire Line
-	8300 5750 10550 5750
+	7250 6000 10550 6000
 Wire Wire Line
-	8350 3550 8300 3550
+	7300 4000 7250 4000
 Wire Wire Line
-	8300 3550 8300 3050
-$Comp
-L power:GNDA #PWR?
-U 1 1 60B7513D
-P 8750 4350
-AR Path="/60B7513D" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60C4A/60B7513D" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60C50/60B7513D" Ref="#PWR?"  Part="1" 
-AR Path="/5DB60C56/60B7513D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8750 4100 50  0001 C CNN
-F 1 "GNDA" H 8755 4177 50  0000 C CNN
-F 2 "" H 8750 4350 50  0001 C CNN
-F 3 "" H 8750 4350 50  0001 C CNN
-	1    8750 4350
-	1    0    0    -1  
-$EndComp
+	7250 4000 7250 3050
 Wire Wire Line
-	8750 3950 8750 4250
+	7700 4400 7700 5300
 Wire Wire Line
-	8750 4250 8850 4250
+	7700 5300 7800 5300
 Wire Wire Line
-	8850 4250 8850 3950
-Connection ~ 8750 4250
+	7800 5300 7800 4400
 Wire Wire Line
-	8750 4250 8750 4350
+	7800 5300 7900 5300
 Wire Wire Line
-	8850 4250 8950 4250
-Wire Wire Line
-	8950 4250 8950 3950
-Connection ~ 8850 4250
+	7900 5300 7900 4400
+Connection ~ 7800 5300
 $Comp
 L Device:C C?
 U 1 1 60B942F1
-P 9350 4000
+P 8300 5050
 AR Path="/5D149BF5/5C7688B4/60B942F1" Ref="C?"  Part="1" 
 AR Path="/5D16DC99/60B942F1" Ref="C?"  Part="1" 
 AR Path="/5D1CB3B5/60B942F1" Ref="C?"  Part="1" 
@@ -1649,37 +1520,273 @@ AR Path="/60B942F1" Ref="C?"  Part="1"
 AR Path="/5DB60C4A/60B942F1" Ref="C?"  Part="1" 
 AR Path="/5DB60C50/60B942F1" Ref="C?"  Part="1" 
 AR Path="/5DB60C56/60B942F1" Ref="C?"  Part="1" 
-F 0 "C?" V 9300 4050 50  0000 L CNN
-F 1 "100n" V 9400 4050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9388 3850 50  0001 C CNN
-F 3 "~" H 9350 4000 50  0001 C CNN
-F 4 "C14663" V 9500 4000 50  0000 C CNN "LCSC#"
-	1    9350 4000
+F 0 "C?" V 8250 5100 50  0000 L CNN
+F 1 "100n" V 8350 5100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8338 4900 50  0001 C CNN
+F 3 "~" H 8300 5050 50  0001 C CNN
+F 4 "C14663" V 8450 5050 50  0000 C CNN "LCSC#"
+	1    8300 5050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 4250 9350 4250
+	7900 5300 8300 5300
 Wire Wire Line
-	9350 4250 9350 4150
-Connection ~ 8950 4250
+	8300 5300 8300 5200
+Connection ~ 7900 5300
 Wire Wire Line
-	9350 3850 9350 3250
+	8300 4900 8300 3050
 Wire Wire Line
-	9350 3250 8750 3250
+	8300 3050 7700 3050
 Wire Wire Line
-	8750 3250 8750 3350
-Wire Wire Line
-	8750 3250 8750 3150
-Connection ~ 8750 3250
+	7700 3050 7700 3800
 $Comp
-L power:+5V #PWR?
-U 1 1 60BC06D6
-P 8750 3150
-F 0 "#PWR?" H 8750 3000 50  0001 C CNN
-F 1 "+5V" H 8765 3323 50  0000 C CNN
-F 2 "" H 8750 3150 50  0001 C CNN
-F 3 "" H 8750 3150 50  0001 C CNN
-	1    8750 3150
+L mcp6d11-ems:MCP6D11-EMS U?
+U 1 1 60AE0AAC
+P 9550 4100
+F 0 "U?" H 9550 4350 50  0000 L CNN
+F 1 "MCP6D11-EMS" H 9550 3850 50  0000 L CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 9500 4100 50  0001 C CNN
+F 3 "${KIPRJMOD}/datasheets/MCP6D11-Data-Sheet-DS20006162A.pdf" H 10050 4300 50  0001 C CNN
+	1    9550 4100
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5300 8500 5300
+Wire Wire Line
+	9400 5300 9400 4500
+Connection ~ 8300 5300
+Connection ~ 9400 5300
+Wire Wire Line
+	9500 4500 9500 4600
+Wire Wire Line
+	9500 4600 10150 4600
+Wire Wire Line
+	10150 4600 10150 3050
+Wire Wire Line
+	10150 3050 9400 3050
+Wire Wire Line
+	9400 3050 9400 3700
+Wire Wire Line
+	8300 3050 8500 3050
+Connection ~ 8300 3050
+Connection ~ 9400 3050
+Text HLabel 10550 6200 2    50   Input ~ 0
+GNDA
+Wire Wire Line
+	10550 6200 6850 6200
+Wire Wire Line
+	6850 5450 6850 6200
+Wire Wire Line
+	6100 6050 6100 5650
+Wire Wire Line
+	6100 5650 6650 5650
+Wire Wire Line
+	6650 5650 6650 6300
+Wire Wire Line
+	6650 6300 10550 6300
+Wire Wire Line
+	6100 6350 6100 6650
+Wire Wire Line
+	6100 6650 6650 6650
+Wire Wire Line
+	6650 6650 6650 6400
+Wire Wire Line
+	6650 6400 10550 6400
+Text HLabel 10550 6400 2    50   Input ~ 0
+T-
+$Comp
+L Device:C C?
+U 1 1 60BF5C54
+P 10150 5050
+AR Path="/5D149BF5/5C7688B4/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/5D16DC99/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/5D1CB3B5/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/5D1F70AC/5D20B880/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/5DB60D99/5D20B880/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/601CB20C/5D20B880/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/5DB60C4A/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/5DB60C50/60BF5C54" Ref="C?"  Part="1" 
+AR Path="/5DB60C56/60BF5C54" Ref="C?"  Part="1" 
+F 0 "C?" V 10100 5100 50  0000 L CNN
+F 1 "100n" V 10200 5100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10188 4900 50  0001 C CNN
+F 3 "~" H 10150 5050 50  0001 C CNN
+F 4 "C14663" V 10300 5050 50  0000 C CNN "LCSC#"
+	1    10150 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BF8615
+P 10450 5050
+AR Path="/5D149BF5/5C7688B4/60BF8615" Ref="C?"  Part="1" 
+AR Path="/5D16DC99/60BF8615" Ref="C?"  Part="1" 
+AR Path="/5D1CB3B5/60BF8615" Ref="C?"  Part="1" 
+AR Path="/5D1F70AC/5D20B880/60BF8615" Ref="C?"  Part="1" 
+AR Path="/5DB60D99/5D20B880/60BF8615" Ref="C?"  Part="1" 
+AR Path="/601CB20C/5D20B880/60BF8615" Ref="C?"  Part="1" 
+AR Path="/60BF8615" Ref="C?"  Part="1" 
+AR Path="/5DB60C4A/60BF8615" Ref="C?"  Part="1" 
+AR Path="/5DB60C50/60BF8615" Ref="C?"  Part="1" 
+AR Path="/5DB60C56/60BF8615" Ref="C?"  Part="1" 
+F 0 "C?" V 10400 5100 50  0000 L CNN
+F 1 "100n" V 10500 5100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10488 4900 50  0001 C CNN
+F 3 "~" H 10450 5050 50  0001 C CNN
+F 4 "C14663" V 10600 5050 50  0000 C CNN "LCSC#"
+	1    10450 5050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 5300 10150 5200
+Wire Wire Line
+	9400 5300 10150 5300
+Wire Wire Line
+	10150 5300 10450 5300
+Wire Wire Line
+	10450 5300 10450 5200
+Connection ~ 10150 5300
+Wire Wire Line
+	10150 4900 10150 4600
+Connection ~ 10150 4600
+Wire Wire Line
+	10450 4900 10450 3450
+Wire Wire Line
+	10450 3450 9500 3450
+Wire Wire Line
+	9500 3450 9500 3700
+Text HLabel 10550 3050 2    50   Input ~ 0
++5V
+Wire Wire Line
+	10150 3050 10550 3050
+Connection ~ 10150 3050
+Wire Wire Line
+	10450 5300 10550 5300
+Connection ~ 10450 5300
+Text HLabel 10550 5300 2    50   Input ~ 0
+GNDA
+$Comp
+L Device:R R?
+U 1 1 60CA19A3
+P 8500 4650
+AR Path="/60CA19A3" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/60CA19A3" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/60CA19A3" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/60CA19A3" Ref="R?"  Part="1" 
+F 0 "R?" V 8500 4600 50  0000 L CNN
+F 1 "1k" V 8450 4800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 4650 50  0001 C CNN
+F 3 "~" H 8500 4650 50  0001 C CNN
+F 4 "C21190" V 8600 4500 50  0000 L CNN "LCSC#"
+	1    8500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60CA3712
+P 8500 3550
+AR Path="/60CA3712" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/60CA3712" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/60CA3712" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/60CA3712" Ref="R?"  Part="1" 
+F 0 "R?" V 8500 3500 50  0000 L CNN
+F 1 "1k" V 8450 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 3550 50  0001 C CNN
+F 3 "~" H 8500 3550 50  0001 C CNN
+F 4 "C21190" V 8600 3400 50  0000 L CNN "LCSC#"
+	1    8500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CA418D
+P 8700 5050
+AR Path="/5D149BF5/5C7688B4/60CA418D" Ref="C?"  Part="1" 
+AR Path="/5D16DC99/60CA418D" Ref="C?"  Part="1" 
+AR Path="/5D1CB3B5/60CA418D" Ref="C?"  Part="1" 
+AR Path="/5D1F70AC/5D20B880/60CA418D" Ref="C?"  Part="1" 
+AR Path="/5DB60D99/5D20B880/60CA418D" Ref="C?"  Part="1" 
+AR Path="/601CB20C/5D20B880/60CA418D" Ref="C?"  Part="1" 
+AR Path="/60CA418D" Ref="C?"  Part="1" 
+AR Path="/5DB60C4A/60CA418D" Ref="C?"  Part="1" 
+AR Path="/5DB60C50/60CA418D" Ref="C?"  Part="1" 
+AR Path="/5DB60C56/60CA418D" Ref="C?"  Part="1" 
+F 0 "C?" V 8650 5100 50  0000 L CNN
+F 1 "100n" V 8750 5100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8738 4900 50  0001 C CNN
+F 3 "~" H 8700 5050 50  0001 C CNN
+F 4 "C14663" V 8850 5050 50  0000 C CNN "LCSC#"
+	1    8700 5050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4800 8500 5300
+Connection ~ 8500 5300
+Wire Wire Line
+	8500 5300 8700 5300
+Wire Wire Line
+	8500 4500 8500 4200
+Wire Wire Line
+	8500 3400 8500 3050
+Connection ~ 8500 3050
+Wire Wire Line
+	8500 3050 9400 3050
+Wire Wire Line
+	9150 4200 9050 4200
+Connection ~ 8500 4200
+Wire Wire Line
+	8500 4200 8500 3700
+Wire Wire Line
+	8700 4200 8700 4900
+Connection ~ 8700 4200
+Wire Wire Line
+	8700 4200 8500 4200
+Wire Wire Line
+	8700 5200 8700 5300
+Connection ~ 8700 5300
+Wire Wire Line
+	8700 5300 9400 5300
+Wire Wire Line
+	8750 4200 8700 4200
+$Comp
+L Device:R R?
+U 1 1 60D2EDD9
+P 8900 4000
+AR Path="/60D2EDD9" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/60D2EDD9" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/60D2EDD9" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/60D2EDD9" Ref="R?"  Part="1" 
+F 0 "R?" V 8900 3950 50  0000 L CNN
+F 1 "4k7" V 8850 4100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 4000 50  0001 C CNN
+F 3 "~" H 8900 4000 50  0001 C CNN
+F 4 "C23162" V 9000 3850 50  0000 L CNN "LCSC#"
+	1    8900 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 4000 9050 4000
+Wire Wire Line
+	8750 4000 8400 4000
+Wire Wire Line
+	8400 4000 8400 4100
+Wire Wire Line
+	8400 4100 8100 4100
+$Comp
+L Device:R R?
+U 1 1 60D4BF4C
+P 8900 4200
+AR Path="/60D4BF4C" Ref="R?"  Part="1" 
+AR Path="/5DB60C4A/60D4BF4C" Ref="R?"  Part="1" 
+AR Path="/5DB60C50/60D4BF4C" Ref="R?"  Part="1" 
+AR Path="/5DB60C56/60D4BF4C" Ref="R?"  Part="1" 
+F 0 "R?" V 8900 4150 50  0000 L CNN
+F 1 "4k7" V 8850 4300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 4200 50  0001 C CNN
+F 3 "~" H 8900 4200 50  0001 C CNN
+F 4 "C23162" V 9000 4050 50  0000 L CNN "LCSC#"
+	1    8900 4200
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

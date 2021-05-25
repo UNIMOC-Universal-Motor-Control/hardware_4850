@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP6D11-EMS
+D Low-Noise, Precision, 90 MHz Differential I/O Amplifier
+K ADC driver
+F ${KIPRJMOD}/datasheets/MCP6D11-Data-Sheet-DS20006162A.pdf
+$ENDCMP
+#
+#End Doc Library
