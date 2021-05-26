@@ -1,4 +1,4 @@
-update=04.04.2021 10:50:17
+update=26.05.2021 10:39:42
 version=1
 last_client=kicad
 [general]
@@ -59,12 +59,12 @@ SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=F.Cu
+Name=Top
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=VCC
-Type=1
+Name=Signal
+Type=0
 Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=GND
@@ -183,8 +183,8 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=B.Cu
-Type=2
+Name=Bottom_VCC
+Type=1
 Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=1

@@ -352,4 +352,57 @@ $EndComp
 Wire Wire Line
 	10650 5350 10650 5500
 Connection ~ 10650 5500
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J109
+U 1 1 60AE1E23
+P 8150 850
+F 0 "J109" H 8200 1067 50  0000 C CNN
+F 1 "Supply" H 8200 976 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical_SMD" H 8150 850 50  0001 C CNN
+F 3 "~" H 8150 850 50  0001 C CNN
+	1    8150 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0103
+U 1 1 60AE2E81
+P 8850 700
+F 0 "#PWR0103" H 8850 550 50  0001 C CNN
+F 1 "+BATT" H 8865 873 50  0000 C CNN
+F 2 "" H 8850 700 50  0001 C CNN
+F 3 "" H 8850 700 50  0001 C CNN
+	1    8850 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 60AE370E
+P 7650 1050
+AR Path="/5DB33F8E/60AE370E" Ref="#PWR?"  Part="1" 
+AR Path="/60AE370E" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 7650 850 50  0001 C CNN
+F 1 "GNDPWR" H 7654 896 50  0000 C CNN
+F 2 "" H 7650 1000 50  0001 C CNN
+F 3 "" H 7650 1000 50  0001 C CNN
+	1    7650 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 850  8850 850 
+Wire Wire Line
+	8850 850  8850 700 
+Wire Wire Line
+	8450 950  8850 950 
+Wire Wire Line
+	8850 950  8850 850 
+Connection ~ 8850 850 
+Wire Wire Line
+	7950 850  7650 850 
+Wire Wire Line
+	7650 850  7650 950 
+Wire Wire Line
+	7950 950  7650 950 
+Connection ~ 7650 950 
+Wire Wire Line
+	7650 950  7650 1050
 $EndSCHEMATC
